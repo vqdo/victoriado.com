@@ -1,0 +1,46 @@
+html, body {
+	background: #f4f3eb;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	height: 2000px;
+}
+
+.sidebar {
+	background: #ffeb3c;
+	height: 100%;
+	padding: 0 2em;
+	width: 28em;
+}
+.sidebar h1, .sidebar h2, .iam-list {
+	color: #000;
+	text-align: center;
+	font: bold 7em "PT Sans Caption";
+	letter-spacing: -0.1em;		
+}
+.sidebar h1 {
+	color: #f00033;
+	padding: 0.2em 0;
+	/*border-bottom: 5px dotted #000;*/	
+}
+.sidebar h2 {
+	display: block;
+	color: #000;
+	font: bold 2em "PT Sans Caption";
+	text-align: right;
+	text-transform: uppercase;
+}
+.iam-list {
+	display: block;
+	text-align: right;
+	font-size: 3em;
+}
+.sidebar strong {
+	color: #000;
+}
