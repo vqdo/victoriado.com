@@ -1,5 +1,6 @@
 html, body {
-	background: #f4f3eb;
+	background: url('../images/yb-bg.png') no-repeat bottom right #EEE;
+	background-size: 800px 800px;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -9,38 +10,121 @@ h1, h2 {
 	padding: 0;
 }
 .container {
-	height: 2000px;
+
+}
+#side-accent {
+	border-right: 15px solid #DDD;
+	width: 7px;
+	height: 100%;
+	position: absolute;
+	background: #f00033;
 }
 
-.sidebar {
-	background: #ffeb3c;
-	height: 100%;
-	padding: 0 2em;
-	width: 28em;
+.main-title {
+	border-bottom: 1px dotted #CCC;
+
+	padding: 0.1em 1em 0.1em 0.5em;
+	margin: 0 2em;
 }
-.sidebar h1, .sidebar h2, .iam-list {
-	color: #000;
-	text-align: center;
-	font: bold 7em "PT Sans Caption";
-	letter-spacing: -0.1em;		
+.main-title h1, .main-title h2, .iam-list {
+	color: #666;
+	text-align: left;
+	font: bold 7em "PT Sans Caption";		
 }
-.sidebar h1 {
+.main-title h1 {
 	color: #f00033;
 	padding: 0.2em 0;
+	letter-spacing: -0.1em;
 	/*border-bottom: 5px dotted #000;*/	
 }
-.sidebar h2 {
+.main-title h2 {
+	margin: -1.5em 0 0.2em 0.2em ;
 	display: block;
-	color: #000;
+	color: #999;
 	font: bold 2em "PT Sans Caption";
-	text-align: right;
 	text-transform: uppercase;
+	letter-spacing: -0.05em;	
 }
 .iam-list {
 	display: block;
-	text-align: right;
 	font-size: 3em;
 }
-.sidebar strong {
-	color: #000;
+.main-title strong {
+	color: #f00033;
+}
+.main-projects {
+	margin: 0 2em;	
+}
+.main-project-wrapper.wic {
+	background: url('../images/wic-thumb.png');
+}
+.main-project-wrapper.memory {
+	background: url('../images/memory-thumb.png');
+}
+.main-project-wrapper.wine {
+	background: url('../images/wine-thumb.png');
+}
+.main-project-wrapper {
+	display: inline-block;
+	border: 5px solid #FFF;
+	width: 300px;
+	height: 200px;
+	margin: 2em 1em;
+	z-index: 100;
+	overflow: hidden;
+}
+.main-project-overlay {
+	background: #2121fc;
+	color: #FFF;
+	opacity: 0.9;
+	margin-left: -300px;
+	font: normal 1em "PT Sans Caption", Arial, sans-serif;	
+	text-transform: uppercase;
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+.main-project-overlay h1 {
+	position: absolute;
+		right: 10px;
+		bottom: 10px;	
+	line-height: 90%;		
+	display: inline-block;
+	text-align: right;
+}
+footer {
+	min-height: 300px;
+	margin: 2em 0 0 0;
+}
+footer .col {
+	border-top: 5px solid #ffe13e;
+	color: #555;
+	font: normal 14px Georgia, sans-serif;
+	float: left;
+	width: 240px;
+	letter-spacing: 0;
+	line-height: -0.5;
+	padding: 1em 0.2em;
+	margin: 0 1em 0 3em;
+}
+footer .col-main {
+	text-align: justify;	
+	width: 380px;
+}
+footer h1 {
+	color: #333;
+	font: bold 1.5em "PT Sans Camption", Arial, sans-serif;
+}
+
+
+@media (max-width: 1400px) {
+	body {
+		background-size: 600px 600px;
+	}
+}
+
+@media(max-width: 1000px) {
+	body {
+		background-size: 400px 400px;
+	}
 }
