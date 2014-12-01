@@ -1,22 +1,37 @@
+var home = (function() {
+	var self = {};
+	var $logo = $('#logo');
+
+	self.init = function() {
+	}
+	// home.scaleToLogoSize = function() {
+	// 	var $logo = $('.brand img');
+	// 	var $banner = $('header');
+	// 	var height = $logo.height();
+	// 	console.log(height);
+	// 	$banner.height(height);
+	// }
+	self.onResize = function() {
+
+	}
+
+	/** 
+	 * Update opacity of the logo based on scroll distance 
+	 */
+	self.updateOpacity = function(distance) {
+		var interaction_distance = $logo.height();
+		var opacity = distance/interaction_distance;
+		opacity = Math.max(1 - Math.min(1, opacity), 0.1);
+
+		$logo.css("opacity", opacity);
+	}
+
+	return self;
+})();
+
 $(document).ready(function() {
-	console.log("Ready!");
-
-	var ANIMATE_TIME = 200;
-	var projectThumbs = $('.main-project-wrapper');
-
-	$(projectThumbs).hover(function(evt) {
-		var $el = $(this).find('.main-project-overlay');
-		$el.animate({ marginLeft: '+=300px' }, {
-			duration: ANIMATE_TIME
-		});
-	}, function(evt) {
-		var $el = $(this).find('.main-project-overlay');
-		$el.animate({ marginLeft: '+=300px' }, {
-				duration: ANIMATE_TIME, 
-				complete: function() {
-					$el.css('margin-left', '-300px');	
-				}
-		});	
+	home.init();
+	$(window).scroll(function() {
+		home.updateOpacity($(window).scrollTop());
 	});
-
 });

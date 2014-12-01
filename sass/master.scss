@@ -1,0 +1,168 @@
+$font-stack: Helvetica, sans-serif;
+$font-size: 14pt;
+$accent-color: #f76e50;
+$secondary-color: #f38647;
+$logo-color: #ced7a4;
+$background-color: #f0e4c9;
+$default_brand_size: 400px;
+$default_logo_size: 500px;
+$padding: 20px;
+
+$serif-stack: "Libre Baskerville", "Times New Roman", sans-serif;
+
+@import 'vendor/meyer-reset';
+
+html, body {
+    background: $background-color;
+    font: normal $font-size $font-stack;
+    width: 100%;
+    height: 100%;
+}
+
+p, a {
+    font: normal 16px $serif-stack;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+
+/** 
+ * Header / first panel 
+ *************************/
+header {
+    background: $accent-color;
+    color: #FFF;  
+    height: 500px;
+}
+header .block {
+    float: left;
+    height: 100%;
+}
+header .brand {
+    background: $logo-color;
+    width: $default_brand_size;
+    overflow: hidden;
+}
+.brand img {
+    width: $default_logo_size;
+    max-height: 650px;
+    position: fixed;
+}
+header .intro {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.intro-text {
+    background: $accent-color;
+    border-top: 10px solid $secondary-color;
+    margin: 0 0 0 $default_brand_size;  
+    padding: 80px;
+    height: 330px;
+}
+.intro-text p {
+    padding: 20px 100px 0 60px;
+    font-size: 20px;
+    max-width: 1000px;
+}
+// .intro-text h1 {
+//     font: bold 18px $serif-stack;
+//     text-transform: uppercase;
+// }
+.intro-text h2 {
+    padding: 0 0 5% 0;
+}
+header h2 {
+    font: normal 150% $serif-stack;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/****************************
+ * Navigation
+ ****************************/
+nav {
+    float: right;
+}
+nav.fixed {
+    position: fixed;
+        top: 0;
+        right: 0;
+}
+nav li {
+    float: left;
+    padding: 10px 20px;
+}
+
+/****************************
+ * Body
+ ****************************/
+
+.container {
+    height: 1000px;
+}
+
+
+
+/*****************************
+ * Utility
+ *****************************/
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+@media (max-width: 1120px) {
+    header {
+        height: 300px;
+    }
+    header .brand {
+        width: 200px;
+    }
+    .brand img {
+        width: 300px;
+    }
+    .intro-text {
+        margin: 0 0 0 200px;
+        padding: 20px 40px 0 40px;
+        height: 270px;
+    }
+    .intro-text h2 {
+        padding: 0 0 0 0;        
+    }
+    .intro-text p {
+        font-size: 14px;
+        padding: 20px 0 0 40px;        
+    }
+}

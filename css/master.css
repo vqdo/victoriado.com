@@ -1,242 +1,176 @@
-body, html {
-	min-height: 100%;
+/* line 5, ../sass/vendor/_meyer-reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* line 14, ../sass/vendor/_meyer-reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 17, ../sass/vendor/_meyer-reset.scss */
 body {
-/*	background: url('../images/yb-bg.png') no-repeat bottom right #EEE;
-	background-size: 800px 800px;*/
-	background: #EEE;
-	margin: 0;
-	padding: 0;
-}
-h1, h2 {
-	margin: 0;
-	padding: 0;
-}
-.back {
-	background: #ffe13e;
-	color: #333;
-	font: bold 1.2em "PT Sans Caption", Arial, sans-serif;
-	padding: 0 0.6em 0.2em 0.4em;
-	position: absolute;
-		top: 0.9em;
-}
-.back:hover {
-	background: #000;
-	color: #FFF;
-}
-.container {
-	margin-left: 3em;
-}
-#bg-fixed {
-	background: url('../images/yb-bg.png') no-repeat bottom right #EEE;
-	background-size: 800px 800px;	
-	width: 800px;
-	height: 800px;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-}
-#side-accent {
-	border-right: 15px solid #DDD;
-	width: 7px;
-	min-height: 100%;
-	position: fixed;
-		left: 0;
-		top: 0;
-	background: #f00033;
+  line-height: 1;
 }
 
-.main-title {
-	border-bottom: 1px dotted #CCC;
-
-	padding: 0.1em 0 0.1em 0;
-}
-.main-title h1, .main-title h2, .iam-list {
-	color: #666;
-	text-align: left;
-	font: bold 7em "PT Sans Caption";		
-}
-.main-title h1 {
-	color: #f00033;
-	padding: 0.2em 0;
-	letter-spacing: -0.1em;
-	/*border-bottom: 5px dotted #000;*/	
-}
-.main-title h2 {
-	margin: -1.5em 0 0.2em 0.2em ;
-	display: block;
-	color: #999;
-	font: bold 2em "PT Sans Caption";
-	text-transform: uppercase;
-	letter-spacing: -0.05em;	
-}
-.iam-list {
-	display: block;
-	font-size: 3em;
-}
-.main-title strong {
-	color: #f00033;
-}
-strong.alt {
-	color:  #000;
-}
-.main-projects {
-
-}
-.main-project-wrapper.wic {
-	background: url('../images/wic-thumb.png');
-}
-.main-project-wrapper.memory {
-	background: url('../images/memory-thumb.png');
-}
-.main-project-wrapper.wine {
-	background: url('../images/wine-thumb.png');
-}
-.main-project-wrapper {
-	display: inline-block;
-	border: 5px solid #FFF;
-	width: 300px;
-	height: 200px;
-	margin: 2em 1em;
-	z-index: 100;
-	overflow: hidden;
-}
-.main-project-overlay {
-	background: #2121fc;
-	color: #FFF;
-	opacity: 0.9;
-	margin-left: -300px;
-	font: normal 1em "PT Sans Caption", Arial, sans-serif;	
-	text-transform: uppercase;
-	position: relative;
-	width: 300px;
-	height: 200px;
-}
-.main-project-overlay h1 {
-	position: absolute;
-		right: 10px;
-		bottom: 10px;	
-	line-height: 90%;		
-	display: inline-block;
-	text-align: right;
-}
-.project-main {
-	width: 920px;
-}
-.project-main p {
-	color: #333;
-	font: normal 1.3em  Arial, sans-serif;
-	text-shadow: 1px 1px 1px #FFF;	
-	line-height: 1.5;
-	padding: 0 0 0 2em;
+/* line 20, ../sass/vendor/_meyer-reset.scss */
+ol, ul {
+  list-style: none;
 }
 
-.project-main img {
-	background: #FFF;
-	margin: 1em 0;
-	padding: 10px;
-	width: 900px;
-}
-.project-main .date-completed {
-	border-left: 15px solid #2121fc;
-	color: #666;
-	font: normal 2em "PT Sans Caption", Arial, sans-serif;
-	letter-spacing: -0.1em;
-	line-height: 1;
-	padding: 0 0 0 0.9em;
-	text-transform: uppercase;
-}
-.sub-image {
-	border: 5px solid #FFF;
-	display: inline-block;
-	opacity: 0.9;
-	height: 300px;
-	width: 440px;
-}
-.sub-image.wic1 {
-	background: url('../images/wiclayout.png') no-repeat 0 5% ;
-	background-size: 100%;
-}
-.sub-image.wic2 {
-	background: url('../images/wiclayout-v2.png') no-repeat 50% 5% ;
-	background-size: 110%;
+/* line 23, ../sass/vendor/_meyer-reset.scss */
+blockquote, q {
+  quotes: none;
 }
 
-.sub-image.wine1 {
-	background: url('../images/wine1.png') no-repeat 50% 85% ;
-	background-size: 100%;
-}
-.sub-image.wine2 {
-	background: url('../images/wine2.png') no-repeat 50% 5% ;
-	background-size: 100%;
-}
-.summary {
-	margin: 2em 0;
+/* line 27, ../sass/vendor/_meyer-reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
 }
 
-
-/** Utility **/
-
-.fl {
-	float: left;
-}
-.fr {
-	float: right;
+/* line 33, ../sass/vendor/_meyer-reset.scss */
+q:before, q:after {
+  content: "";
+  content: none;
 }
 
-footer {
-	min-height: 300px;
-	margin: 2em 0 0 0;
+/* line 38, ../sass/vendor/_meyer-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-footer .col {
-	border-top: 5px solid #ffe13e;
-	color: #555;
-	font: normal 14px Georgia, sans-serif;
-	float: left;
-	width: 240px;
-	letter-spacing: 0;
-	line-height: -0.5;
-	padding: 1em 0.2em;
-	margin: 0 1em 0 3em;
+
+/* line 15, ../sass/master.scss */
+html, body {
+  background: #f0e4c9;
+  font: normal 14pt Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
 }
-footer .col-main {
-	text-align: justify;	
-	width: 380px;
+
+/* line 22, ../sass/master.scss */
+p, a {
+  font: normal 16px "Libre Baskerville", "Times New Roman", sans-serif;
+  line-height: 1.5;
 }
-footer h1 {
-	color: #333;
-	font: bold 1.5em "PT Sans Caption", Arial, sans-serif;
-}
+
+/* line 26, ../sass/master.scss */
 a {
-	color: #2121fc;
-	font: normal 1em "PT Sans Caption", Arial, sans-serif;
-	text-decoration: none;
-}
-a:hover {
-	color: #f00033;
-}
-ul {
-	list-style: none;
-}
-footer a {
-	letter-spacing: 1px;
+  text-decoration: none;
 }
 
-
-@media (max-width: 1400px) {
-	#bg-fixed {
-		background-size: 600px 600px;
-	}
+/** 
+ * Header / first panel 
+ *************************/
+/* line 33, ../sass/master.scss */
+header {
+  background: #f76e50;
+  color: #FFF;
+  height: 500px;
 }
 
-@media(max-width: 1000px) {
-	#bg-fixed {
-		background-size: 400px 400px;
-	}
+/* line 38, ../sass/master.scss */
+header .block {
+  float: left;
+  height: 100%;
 }
 
+/* line 42, ../sass/master.scss */
+header .brand {
+  background: #ced7a4;
+  width: 400px;
+  overflow: hidden;
+}
 
+/* line 47, ../sass/master.scss */
+.brand img {
+  width: 500px;
+  max-height: 650px;
+  position: fixed;
+}
+
+/* line 52, ../sass/master.scss */
+header .intro {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* line 57, ../sass/master.scss */
+.intro-text {
+  background: #f76e50;
+  border-top: 10px solid #f38647;
+  margin: 0 0 0 400px;
+  padding: 80px;
+  height: 330px;
+}
+
+/* line 64, ../sass/master.scss */
+.intro-text p {
+  padding: 20px 100px 0 60px;
+  font-size: 20px;
+  max-width: 1000px;
+}
+
+/* line 73, ../sass/master.scss */
+.intro-text h2 {
+  padding: 0 0 5% 0;
+}
+
+/* line 76, ../sass/master.scss */
+header h2 {
+  font: normal 150% "Libre Baskerville", "Times New Roman", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/****************************
+ * Navigation
+ ****************************/
+/* line 85, ../sass/master.scss */
+nav {
+  float: right;
+}
+
+/* line 88, ../sass/master.scss */
+nav.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* line 93, ../sass/master.scss */
+nav li {
+  float: left;
+  padding: 10px 20px;
+}
+
+/****************************
+ * Body
+ ****************************/
+/* line 102, ../sass/master.scss */
+.container {
+  height: 1000px;
+}
+
+/*****************************
+ * Utility
+ *****************************/
+/* line 112, ../sass/master.scss */
+.fl {
+  float: left;
+}
+
+/* line 115, ../sass/master.scss */
+.fr {
+  float: right;
+}
 
 /**
  * For modern browsers
@@ -247,20 +181,60 @@ footer a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+/* line 128, ../sass/master.scss */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
+/* line 134, ../sass/master.scss */
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+/* line 142, ../sass/master.scss */
 .cf {
-    *zoom: 1;
+  *zoom: 1;
+}
+
+@media (max-width: 1120px) {
+  /* line 147, ../sass/master.scss */
+  header {
+    height: 300px;
+  }
+
+  /* line 150, ../sass/master.scss */
+  header .brand {
+    width: 200px;
+  }
+
+  /* line 153, ../sass/master.scss */
+  .brand img {
+    width: 300px;
+  }
+
+  /* line 156, ../sass/master.scss */
+  .intro-text {
+    margin: 0 0 0 200px;
+    padding: 20px 40px 0 40px;
+    height: 270px;
+  }
+
+  /* line 161, ../sass/master.scss */
+  .intro-text h2 {
+    padding: 0 0 0 0;
+  }
+
+  /* line 164, ../sass/master.scss */
+  .intro-text p {
+    font-size: 14px;
+    padding: 20px 0 0 40px;
+  }
 }
