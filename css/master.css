@@ -1,3 +1,5 @@
+/*#ced7a4;*/
+/*#f0e4c9;*/
 /* line 5, ../sass/vendor/_meyer-reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -46,21 +48,20 @@ table {
   border-spacing: 0;
 }
 
-/* line 15, ../sass/master.scss */
+/* line 18, ../sass/master.scss */
 html, body {
-  background: #f0e4c9;
   font: normal 14pt Helvetica, sans-serif;
   width: 100%;
   height: 100%;
 }
 
-/* line 22, ../sass/master.scss */
+/* line 24, ../sass/master.scss */
 p, a {
   font: normal 16px "Libre Baskerville", "Times New Roman", sans-serif;
   line-height: 1.5;
 }
 
-/* line 26, ../sass/master.scss */
+/* line 28, ../sass/master.scss */
 a {
   text-decoration: none;
 }
@@ -68,62 +69,65 @@ a {
 /** 
  * Header / first panel 
  *************************/
-/* line 33, ../sass/master.scss */
+/* line 35, ../sass/master.scss */
 header {
   background: #f76e50;
   color: #FFF;
   height: 500px;
+  position: relative;
+  z-index: -1;
 }
 
-/* line 38, ../sass/master.scss */
+/* line 42, ../sass/master.scss */
 header .block {
   float: left;
   height: 100%;
 }
 
-/* line 42, ../sass/master.scss */
+/* line 46, ../sass/master.scss */
 header .brand {
-  background: #ced7a4;
+  background: #EEE;
   width: 400px;
   overflow: hidden;
 }
 
-/* line 47, ../sass/master.scss */
+/* line 51, ../sass/master.scss */
 .brand img {
   width: 500px;
   max-height: 650px;
-  position: fixed;
+  position: absolute;
 }
 
-/* line 52, ../sass/master.scss */
+/* line 56, ../sass/master.scss */
 header .intro {
   height: 100%;
   width: 100%;
   position: absolute;
 }
 
-/* line 57, ../sass/master.scss */
+/* line 61, ../sass/master.scss */
 .intro-text {
   background: #f76e50;
   border-top: 10px solid #f38647;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;
   margin: 0 0 0 400px;
   padding: 80px;
   height: 330px;
 }
 
-/* line 64, ../sass/master.scss */
+/* line 69, ../sass/master.scss */
 .intro-text p {
   padding: 20px 100px 0 60px;
   font-size: 20px;
   max-width: 1000px;
 }
 
-/* line 73, ../sass/master.scss */
+/* line 78, ../sass/master.scss */
 .intro-text h2 {
   padding: 0 0 5% 0;
 }
 
-/* line 76, ../sass/master.scss */
+/* line 81, ../sass/master.scss */
 header h2 {
   font: normal 150% "Libre Baskerville", "Times New Roman", sans-serif;
   letter-spacing: 2px;
@@ -133,19 +137,19 @@ header h2 {
 /****************************
  * Navigation
  ****************************/
-/* line 85, ../sass/master.scss */
+/* line 90, ../sass/master.scss */
 nav {
   float: right;
 }
 
-/* line 88, ../sass/master.scss */
+/* line 93, ../sass/master.scss */
 nav.fixed {
   position: fixed;
   top: 0;
   right: 0;
 }
 
-/* line 93, ../sass/master.scss */
+/* line 98, ../sass/master.scss */
 nav li {
   float: left;
   padding: 10px 20px;
@@ -154,20 +158,179 @@ nav li {
 /****************************
  * Body
  ****************************/
-/* line 102, ../sass/master.scss */
+/* line 107, ../sass/master.scss */
 .container {
   height: 1000px;
+}
+
+/****************************
+ * Works
+ ****************************/
+/* line 114, ../sass/master.scss */
+section {
+  padding: 60px 0;
+  width: 100%;
+}
+
+/* line 118, ../sass/master.scss */
+section .title {
+  width: 400px;
+}
+
+/* line 121, ../sass/master.scss */
+section .title ul {
+  float: right;
+  padding: 10px 0;
+  text-align: right;
+  width: 100%;
+}
+
+/* line 127, ../sass/master.scss */
+section .title ul a {
+  color: #555;
+  font: normal 14px Helvetica, sans-serif;
+}
+
+/* line 132, ../sass/master.scss */
+section h1 {
+  color: #CCC;
+  font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
+  text-align: right;
+  line-height: 0.9;
+}
+
+/* line 138, ../sass/master.scss */
+section h2 {
+  color: #f38647;
+  font: bold 11px Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  float: right;
+}
+
+/* line 145, ../sass/master.scss */
+.portfolio-gallery {
+  margin-left: 400px;
+  padding: 0 0 0 40px;
+}
+
+/* line 149, ../sass/master.scss */
+.portfolio-thumb {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-top: 8px solid #333;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  margin: 0 0 10px 0;
+  width: 320px;
+}
+
+/* line 159, ../sass/master.scss */
+.portfolio-thumb img {
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+
+/* line 163, ../sass/master.scss */
+.portfolio-thumb.android {
+  border-top: 8px solid #669966;
+}
+
+/* line 166, ../sass/master.scss */
+.portfolio-thumb a {
+  opacity: 0.8;
+}
+
+/* line 169, ../sass/master.scss */
+.portfolio-thumb a:hover {
+  opacity: 1;
+}
+
+/* line 172, ../sass/master.scss */
+.portfolio-thumb p {
+  color: #666;
+  font: normal 14px Helvetica, sans-serif;
+  padding: 5px 10px;
+}
+
+/* line 177, ../sass/master.scss */
+.see-more {
+  background: #000;
+  color: #FFF;
+  font: bold 11px Helvetica, sans-serif;
+  opacity: 0.7;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* line 188, ../sass/master.scss */
+.more-info {
+  display: none;
+}
+
+/* line 191, ../sass/master.scss */
+.expanded .more-info {
+  display: block;
+}
+
+/* line 194, ../sass/master.scss */
+.col {
+  padding: 0 5px;
+}
+
+/* line 197, ../sass/master.scss */
+.works-links li a {
+  display: block;
+  padding: 5px 0;
+}
+
+/* line 201, ../sass/master.scss */
+.works-links li:hover a {
+  color: #f38647;
+  font-weight: bold;
+}
+
+/*****************************
+ * Portfolio icons
+ *****************************/
+/* line 210, ../sass/master.scss */
+.portfolio-icon {
+  border: 1px solid transparent;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  margin: 2px;
+}
+
+/* line 218, ../sass/master.scss */
+.icon-web {
+  background: #333;
+}
+
+/* line 221, ../sass/master.scss */
+.icon-design {
+  border: 1px solid #9966CC;
+}
+
+/* line 224, ../sass/master.scss */
+.icon-android {
+  background: #669966;
 }
 
 /*****************************
  * Utility
  *****************************/
-/* line 112, ../sass/master.scss */
+/* line 232, ../sass/master.scss */
 .fl {
   float: left;
 }
 
-/* line 115, ../sass/master.scss */
+/* line 235, ../sass/master.scss */
 .fr {
   float: right;
 }
@@ -181,7 +344,7 @@ nav li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 128, ../sass/master.scss */
+/* line 248, ../sass/master.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -190,7 +353,7 @@ nav li {
   /* 2 */
 }
 
-/* line 134, ../sass/master.scss */
+/* line 254, ../sass/master.scss */
 .cf:after {
   clear: both;
 }
@@ -199,40 +362,40 @@ nav li {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 142, ../sass/master.scss */
+/* line 262, ../sass/master.scss */
 .cf {
   *zoom: 1;
 }
 
 @media (max-width: 1120px) {
-  /* line 147, ../sass/master.scss */
+  /* line 267, ../sass/master.scss */
   header {
     height: 300px;
   }
 
-  /* line 150, ../sass/master.scss */
+  /* line 270, ../sass/master.scss */
   header .brand {
     width: 200px;
   }
 
-  /* line 153, ../sass/master.scss */
+  /* line 273, ../sass/master.scss */
   .brand img {
     width: 300px;
   }
 
-  /* line 156, ../sass/master.scss */
+  /* line 276, ../sass/master.scss */
   .intro-text {
     margin: 0 0 0 200px;
     padding: 20px 40px 0 40px;
     height: 270px;
   }
 
-  /* line 161, ../sass/master.scss */
+  /* line 281, ../sass/master.scss */
   .intro-text h2 {
     padding: 0 0 0 0;
   }
 
-  /* line 164, ../sass/master.scss */
+  /* line 284, ../sass/master.scss */
   .intro-text p {
     font-size: 14px;
     padding: 20px 0 0 40px;

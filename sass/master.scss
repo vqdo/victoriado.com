@@ -1,19 +1,21 @@
-$font-stack: Helvetica, sans-serif;
+
 $font-size: 14pt;
 $accent-color: #f76e50;
 $secondary-color: #f38647;
-$logo-color: #ced7a4;
-$background-color: #f0e4c9;
+$logo-color: #EEE; /*#ced7a4;*/
+$background-color: #FFF; /*#f0e4c9;*/
 $default_brand_size: 400px;
 $default_logo_size: 500px;
 $padding: 20px;
 
+$title-size: 48px;
+
+$font-stack: Helvetica, sans-serif;
 $serif-stack: "Libre Baskerville", "Times New Roman", sans-serif;
 
 @import 'vendor/meyer-reset';
 
 html, body {
-    background: $background-color;
     font: normal $font-size $font-stack;
     width: 100%;
     height: 100%;
@@ -34,6 +36,8 @@ header {
     background: $accent-color;
     color: #FFF;  
     height: 500px;
+    position: relative;
+    z-index: -1;
 }
 header .block {
     float: left;
@@ -47,7 +51,7 @@ header .brand {
 .brand img {
     width: $default_logo_size;
     max-height: 650px;
-    position: fixed;
+    position: absolute;
 }
 header .intro {
     height: 100%;
@@ -57,6 +61,7 @@ header .intro {
 .intro-text {
     background: $accent-color;
     border-top: 10px solid $secondary-color;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;    
     margin: 0 0 0 $default_brand_size;  
     padding: 80px;
     height: 330px;
@@ -103,7 +108,122 @@ nav li {
     height: 1000px;
 }
 
+/****************************
+ * Works
+ ****************************/
+section {
+    padding: 60px 0;
+    width: 100%;
+}
+section .title {
+    width: 400px;
+}
+section .title ul {
+    float: right;
+    padding: 10px 0;
+    text-align: right;
+    width: 100%;
+}
+section .title ul a {
+    color: #555;
+    font: normal 14px $font-stack;   
+}
 
+section h1 {
+    color: #CCC;
+    font: bold $title-size $serif-stack;
+    text-align: right;
+    line-height: 0.9;
+}
+section h2 {
+    color: $secondary-color;
+    font: bold 11px $font-stack;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+}
+.portfolio-gallery {
+    margin-left: 400px;
+    padding: 0 0 0 40px;
+}
+.portfolio-thumb {
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-top: 8px solid #333;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    margin: 0 0 10px 0;
+    width: 320px;
+}
+.portfolio-thumb img {
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+.portfolio-thumb.android {
+    border-top: 8px solid #669966; 
+}
+.portfolio-thumb a {
+    opacity: 0.8;    
+}
+.portfolio-thumb a:hover {
+    opacity: 1
+}
+.portfolio-thumb p{
+    color: #666;
+    font: normal 14px $font-stack;
+    padding: 5px 10px;
+}
+.see-more {
+    background: #000;
+    color: #FFF;
+    font: bold 11px $font-stack;
+    opacity: 0.7;
+    text-align: center;
+    position: absolute;
+        bottom: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.more-info {
+    display: none;
+}
+.expanded .more-info {
+    display: block;
+}
+.col {
+    padding: 0 5px;
+}
+.works-links li a {
+    display: block;
+    padding: 5px 0;
+}
+.works-links li:hover a {
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+/*****************************
+ * Portfolio icons
+ *****************************/
+
+.portfolio-icon {
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    margin: 2px;
+}
+.icon-web {
+    background: #333;
+} 
+.icon-design {
+    border: 1px solid #9966CC;
+}
+.icon-android {
+    background: #669966;
+}
 
 /*****************************
  * Utility
