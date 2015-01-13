@@ -20,16 +20,17 @@ var home = (function() {
 		}
 	}
 
-	var worksMap = {};
 	self.portfolioController = {
+		_worksMap: {},
 
 		init: function() {
 			this.attachThumbHandler();
 			this.attachThumbExpand();
 			this.constructColumns($('.portfolio-gallery'), $('.portfolio-thumb'));
 			this.makeWorksMap();
+			this.attachLinkHandler();
+			this.attachIconsHandler();
 		},
-
 
 		makeWorksMap: function() {
 			var thumbnails = $('.portfolio-thumb');
@@ -50,17 +51,44 @@ var home = (function() {
 				return null;
 			}
 
-			$.each(thumbnails, function(i, thumbnail) {
+			$.each(thumbnails, $.proxy(function(i, thumbnail) {
 				thumbnail = $(thumbnail);
 				var name = extractName(thumbnail.attr('id'));
-				worksMap[name] = worksMap[name] || {};
-				worksMap[name].thumbnail = thumbnail;
-			});
-			$.each(links, function(i, link) {
+				this._worksMap[name] = this._worksMap[name] || {};
+				this._worksMap[name].thumbnail = thumbnail;
+			}, this));
+			$.each(links, $.proxy(function(i, link) {
 				link = $(link);
 				var name = extractName(link.attr('id'));
-				worksMap[name] = worksMap[name] || {};
-				worksMap[name].link = link;
+				this._worksMap[name] = this._worksMap[name] || {};
+				this._worksMap[name].link = link;
+			}, this));
+		},
+
+		attachLinkHandler: function() {
+			$.each(this._worksMap, function(i, pair) {
+				var $link = pair.link,
+					$thumb = pair.thumbnail;
+
+				$link.mouseenter(function() {
+					$thumb.find('a').mouseover();
+				}).mouseleave(function() {
+					$thumb.find('a').mouseleave();
+				});
+
+				$link.click(function() {
+					$thumb.find('a').click();
+				})		
+			});
+		},
+
+		attachIconsHandler: function() {
+			var $viewButtons = $('.open-new');
+
+			$viewButtons.mouseenter(function() {
+				$(this).find('.open-new-label').show(200, "linear");
+			}).mouseleave(function() {
+				$(this).find('.open-new-label').hide();
 			});
 		},
 
@@ -84,18 +112,22 @@ var home = (function() {
 				return $('<div class="see-more">Click to see more</div>');
 			}
 
-			var $works = $('.portfolio-thumb');
+			var $works = $('.see-more-button');
 
 			$works.mouseover(function(evt) {;
 				evt.stopPropagation();
 
 				var $this = $(this);
-				if(!$this.has('.see-more').length && !$this.is('.expanded')) {
+				var $parent = $this.parent();
+				$this.find('.thumb-title').show();
+
+				if(!$parent.has('.see-more').length && !$parent.is('.expanded')) {
 					$this.append(createSeeMore());
 				}
 			}).mouseleave(function(evt) {;
 				// console.log($(evt.target).find('.see-more'));
 				//console.log(evt.target);
+				$(this).find('.thumb-title').hide();
 				$(this).find('.see-more').remove();
 			});
 		},
