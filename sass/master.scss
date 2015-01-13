@@ -125,7 +125,7 @@ nav {
     width: 100%;
     z-index: 1;
 }
-nav a {
+nav ul a {
     color: #FFF;
     display: inline-block;
     height: 100%;
@@ -133,6 +133,27 @@ nav a {
     font: normal 16px $serif-stack;
     padding: 15px 30px;
     text-transform: lowercase;    
+}
+.mailto {
+    background: url('../images/icon/icon-mail.png');
+    height: 36px;
+    width: 49px;
+    margin: 6px;
+
+}
+.mailto:hover {
+    background: url('../images/icon/icon-mail-hover.png');
+}
+.email-box {
+    background: transparent;
+    border: 0;
+    color: #EEE;
+    height: 50px;
+    font: normal 18px $font-stack;
+    line-height: 50px;
+    outline: none;
+    resize: none;
+    width: 200px;
 }
 nav.fixed {
     position: fixed;
@@ -356,6 +377,10 @@ h1.thumb-title {
 /*****************************
  * Utility
  *****************************/
+
+.hidetext {
+    opacity: 0;
+}
 
 .fl {
     float: left;

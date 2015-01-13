@@ -169,4 +169,12 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		home.logoController.onScrollDistance($(window).scrollTop());
 	});		
+
+	var highlightText = function(textarea) {
+		textarea.select();
+	}
+
+	$('.email-box').click(function(evt) {
+		highlightText(this);
+	});
 });
