@@ -151,18 +151,36 @@ nav li {
  ****************************/
 
 .container {
-    height: 1000px;
+    min-height: 500px;
 }
+
+
 
 /****************************
  * Works
  ****************************/
+
+
+.all-works {
+    margin: 20px 0 0 0;
+}
+ /* Pagination */
+ #portfolio-contents {
+    // overflow: hidden;
+    // height: 500px;
+}
+
+.works-page {
+    display: none;
+}
+
 section {
     padding: 60px 0;
     width: 100%;
 }
 section .title {
-    width: $default-brand-size;
+    width: 280px;
+
 }
 section .title ul {
     float: right;
@@ -175,7 +193,7 @@ section .title ul a {
     font: normal 14px $font-stack;   
 }
 
-section h1 {
+.title h1 {
     color: #CCC;
     font: bold $title-size $serif-stack;
     text-align: right;
@@ -189,7 +207,7 @@ section h2 {
     float: right;
 }
 .portfolio-gallery {
-    margin-left: 400px;
+    margin-left: 290px;
     padding: 0 0 0 40px;
 }
 .portfolio-thumb {
@@ -217,9 +235,23 @@ section h2 {
     opacity: 1;
 }
 .portfolio-thumb p{
-    color: #666;
+    color: $nav-color;
     font: normal 14px $font-stack;
-    padding: 5px 10px;
+    line-height: 1.5;
+    padding: 15px;
+}
+.goto-details {
+    background: $accent-color;
+    color: #FFF;
+    font: bold 12px $font-stack;
+    float: right;
+    padding: 7px 0;
+    width: 320px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.goto-details:hover {
+    background: $nav-color;
 }
 .see-more {
     background: #000;
@@ -251,6 +283,19 @@ section h2 {
 }
 
 /***
+ * Works page
+ */
+ .works-page {
+    padding: 0 0 0 40px;
+    margin-left: 270px;
+ }
+
+ .works-page h1 {
+    color: $nav-color;
+    font: bold 32px $font-stack;
+ }
+
+/***
  * Works title overlay
  */
 
@@ -275,6 +320,7 @@ h1.thumb-title {
         bottom: 20px;
         right: 10px;
     text-transform: uppercase;
+    text-align: right;
     z-index: 8;
 }
 
@@ -351,6 +397,16 @@ h1.thumb-title {
     display: none;
     font: normal 12px $font-stack;
     line-height: 22px;
+}
+
+/*****************************
+ * Footer
+ *****************************/
+
+footer {
+    background: $nav-color;
+    min-height: 300px;
+    width: 100%;
 }
 
 /*****************************

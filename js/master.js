@@ -20,6 +20,45 @@ var home = (function() {
 		}
 	}
 
+	//Simple mechanism for changing pages with fading animation
+	self.pageController = {
+		init: function(opt) {
+			if(!opt) return;
+
+			var options = {
+				// Required
+				default: opt.default || '',
+				container: opt.container || '',
+				links: opt.links || '',
+
+				// optional
+				currentPage: opt.currentPage || 'works-page-current'
+			};
+
+			options.default.show('fast');
+			options.default.addClass(options.currentPage);
+
+			$(options.links).click(function(evt) {
+				evt.preventDefault();
+
+				var $target = $($(this).attr('href'));
+				var $current = $('.' + options.currentPage);
+				console.log($target);
+				$current.fadeOut({
+					duration: 'fast',
+					complete: function() {
+						$target.fadeIn();
+					}
+				});									
+				//$target.fadeIn();			
+
+				$current.removeClass(options.currentPage);
+				$target.addClass(options.currentPage);
+
+			});
+		}
+	}
+
 	self.portfolioController = {
 		_worksMap: {},
 
@@ -70,15 +109,13 @@ var home = (function() {
 				var $link = pair.link,
 					$thumb = pair.thumbnail;
 
-				$link.mouseenter(function() {
-					$thumb.find('a').mouseover();
-				}).mouseleave(function() {
-					$thumb.find('a').mouseleave();
-				});
-
-				$link.click(function() {
-					$thumb.find('a').click();
-				})		
+				if($thumb) {
+					$link.mouseenter(function() {
+						$thumb.find('a').mouseover();
+					}).mouseleave(function() {
+						$thumb.find('a').mouseleave();
+					});
+				}	
 			});
 		},
 
@@ -169,4 +206,10 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		home.logoController.onScrollDistance($(window).scrollTop());
 	});		
+
+	home.pageController.init({
+		default: $('#page-overview'),
+		container: $('#portfolio-contents'),
+		links: $('.works-links a').add($('.page-back a')).add($('.goto-details'))
+	});
 });
