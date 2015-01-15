@@ -212,4 +212,12 @@ $(document).ready(function() {
 		container: $('#portfolio-contents'),
 		links: $('.works-links a').add($('.page-back a')).add($('.goto-details'))
 	});
+
+	var highlightText = function(textarea) {
+		textarea.select();
+	}
+
+	$('.email-box').click(function(evt) {
+		highlightText(this);
+	});
 });

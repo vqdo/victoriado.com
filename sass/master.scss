@@ -2,14 +2,15 @@
 $font-size: 14pt;
 $accent-color: #f76e50;
 $secondary-color: #f38647;
-$logo-color: #EEE; /*#ced7a4;*/
 $background-color: #FFF; /*#f0e4c9;*/
 $default_brand_size: 380px;
 $default_logo_size: 455px;
+$logo_offset: -850px;
 $padding: 20px;
 $header-height: 50px;
 $nav-color: #041B29; 
 $title-size: 48px;
+$container-size: 1024px;
 
 $font-stack: "Droid Sans", Helvetica, sans-serif;
 $serif-stack: "Libre Baskerville", "Times New Roman", sans-serif;
@@ -28,6 +29,9 @@ p, a {
 }
 a {
     text-decoration: none;
+}
+strong {
+    font-weight: bold;
 }
 
 /** 
@@ -53,25 +57,28 @@ header .block {
     height: 100%;
 }
 header .brand {
-    background: $logo-color;
+    background: url('../images/fresh_snow.png');
     width: 100%;
     overflow: hidden;
+    position: relative;
+    z-index: -2;
 }
 .brand img {
     width: $default_logo_size;
     max-height: 650px;
-    position: absolute;
-        top: 0;
+    margin-left: $logo_offset;
+    position: fixed;
+        top: -20px;
+        left: 50%;
+    z-index: -1;
 }
 header .intro {
     height: auto;
-    width: 100%;
     position: absolute;
 }
 .intro-text {
     background: url('../images/bg-geo2.png') $accent-color;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;    
-    margin: 0 0 0 $default_brand_size;  
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;     
     padding: 20px;
     height: 360px;
 }
@@ -123,9 +130,9 @@ nav {
     position: fixed;
         top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
-nav a {
+nav ul a {
     color: #FFF;
     display: inline-block;
     height: 100%;
@@ -133,6 +140,27 @@ nav a {
     font: normal 16px $serif-stack;
     padding: 15px 30px;
     text-transform: lowercase;    
+}
+.mailto {
+    background: url('../images/icon/icon-mail.png');
+    height: 36px;
+    width: 49px;
+    margin: 6px;
+
+}
+.mailto:hover {
+    background: url('../images/icon/icon-mail-hover.png');
+}
+.email-box {
+    background: transparent;
+    border: 0;
+    color: #EEE;
+    height: 50px;
+    font: normal 18px $font-stack;
+    line-height: 50px;
+    outline: none;
+    resize: none;
+    width: 200px;
 }
 nav.fixed {
     position: fixed;
@@ -151,7 +179,8 @@ nav li {
  ****************************/
 
 .container {
-    min-height: 500px;
+    margin: auto;
+    width: $container-size;
 }
 
 
@@ -162,24 +191,10 @@ nav li {
 
 
 .all-works {
-    margin: 20px 0 0 0;
-}
- /* Pagination */
- #portfolio-contents {
-    // overflow: hidden;
-    // height: 500px;
-}
-
-.works-page {
-    display: none;
-}
-
-section {
-    padding: 60px 0;
-    width: 100%;
+    margin: 80px 0 0 0;
 }
 section .title {
-    width: 280px;
+    width: 200px;
 
 }
 section .title ul {
@@ -199,16 +214,12 @@ section .title ul a {
     text-align: right;
     line-height: 0.9;
 }
-section h2 {
+.title h2 {
     color: $secondary-color;
     font: bold 11px $font-stack;
     text-transform: uppercase;
     letter-spacing: 1px;
     float: right;
-}
-.portfolio-gallery {
-    margin-left: 290px;
-    padding: 0 0 0 40px;
 }
 .portfolio-thumb {
     background: #FFF;
@@ -282,21 +293,74 @@ section h2 {
     font-weight: bold;
 }
 
+#page-overview {
+    width: 800px;
+}
+
 /***
  * Works page
  */
+ #portfolio-contents {
+    margin: 0 0 0 240px;
+ }
  .works-page {
-    padding: 0 0 0 40px;
-    margin-left: 270px;
+    display: none;
+    padding: 0 0 40px 0;    
+ }
+ .works-page h2 {
+    color: $nav-color;
+    font: bold 24px $serif-stack;
+    padding: 20px 0;
+ }
+.works-title {
+    margin: 20px 0;
+}
+ .works-title h1 {
+    color: $nav-color;
+    font: bold 48px $serif-stack;
+    max-width: $container-size;
+ }
+ .works-title h2 {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    font: normal 14px $font-stack;
+    padding: 5px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+ }
+ .works-title h2 .date {
+    color: $accent-color;
+    font-weight: bold;
+ }
+ .works-page p {
+    color: #666;
+    font: normal 18px $font-stack;
+    line-height: 1.5;
+    max-width: 800px;
  }
 
- .works-page h1 {
-    color: $nav-color;
-    font: bold 32px $font-stack;
+ /* Images */
+ .works-img-box {
+    border: 1px solid #CCC;
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+ }
+ .works-img-box img {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: -100%;
+    bottom: -100%;
+    margin: auto;
  }
 
 /***
- * Works title overlay
+ * Works thumbnail title overlay
  */
 
 .thumb-title {
@@ -405,13 +469,45 @@ h1.thumb-title {
 
 footer {
     background: $nav-color;
-    min-height: 300px;
+    color: #FFF;    
     width: 100%;
+}
+footer section {
+    float: left;
+    width: 300px;
+    padding: 20px;
+}
+footer h1 {
+    font: bold 18px $font-stack;
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+}
+footer p, footer a {
+    font: normal 14px $font-stack;
+}
+footer p {
+    margin: 0 0 20px 0;
+}
+footer a {
+    color: $secondary-color;
+    font-weight: bold;
+}
+.social-link img {
+    width: 36px;
+    height: 36px;
+    padding: 0 10px 0 0;
+}
+.attr, .attr a {
+    font: normal 12px $font-stack;
 }
 
 /*****************************
  * Utility
  *****************************/
+
+.hidetext {
+    opacity: 0;
+}
 
 .fl {
     float: left;
