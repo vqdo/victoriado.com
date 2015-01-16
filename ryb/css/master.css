@@ -1,0 +1,266 @@
+body, html {
+	min-height: 100%;
+}
+body {
+/*	background: url('../images/yb-bg.png') no-repeat bottom right #EEE;
+	background-size: 800px 800px;*/
+	background: #EEE;
+	margin: 0;
+	padding: 0;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+.back {
+	background: #ffe13e;
+	color: #333;
+	font: bold 1.2em "PT Sans Caption", Arial, sans-serif;
+	padding: 0 0.6em 0.2em 0.4em;
+	position: absolute;
+		top: 0.9em;
+}
+.back:hover {
+	background: #000;
+	color: #FFF;
+}
+.container {
+	margin-left: 3em;
+}
+#bg-fixed {
+	background: url('../../images/yb-bg.png') no-repeat bottom right #EEE;
+	background-size: 800px 800px;	
+	width: 800px;
+	height: 800px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+#side-accent {
+	border-right: 15px solid #DDD;
+	width: 7px;
+	min-height: 100%;
+	position: fixed;
+		left: 0;
+		top: 0;
+	background: #f00033;
+}
+
+.main-title {
+	border-bottom: 1px dotted #CCC;
+
+	padding: 0.1em 0 0.1em 0;
+}
+.main-title h1, .main-title h2, .iam-list {
+	color: #666;
+	text-align: left;
+	font: bold 7em "PT Sans Caption";		
+}
+.main-title h1 {
+	color: #f00033;
+	padding: 0.2em 0;
+	letter-spacing: -0.1em;
+	/*border-bottom: 5px dotted #000;*/	
+}
+.main-title h2 {
+	margin: -1.5em 0 0.2em 0.2em ;
+	display: block;
+	color: #999;
+	font: bold 2em "PT Sans Caption";
+	text-transform: uppercase;
+	letter-spacing: -0.05em;	
+}
+.iam-list {
+	display: block;
+	font-size: 3em;
+}
+.main-title strong {
+	color: #f00033;
+}
+strong.alt {
+	color:  #000;
+}
+.main-projects {
+
+}
+.main-project-wrapper.wic {
+	background: url('../../images/wic-thumb.png');
+}
+.main-project-wrapper.memory {
+	background: url('../../images/memory-thumb.png');
+}
+.main-project-wrapper.wine {
+	background: url('../../images/wine-thumb.png');
+}
+.main-project-wrapper {
+	display: inline-block;
+	border: 5px solid #FFF;
+	width: 300px;
+	height: 200px;
+	margin: 2em 1em;
+	z-index: 100;
+	overflow: hidden;
+}
+.main-project-overlay {
+	background: #2121fc;
+	color: #FFF;
+	opacity: 0.9;
+	margin-left: -300px;
+	font: normal 1em "PT Sans Caption", Arial, sans-serif;	
+	text-transform: uppercase;
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+.main-project-overlay h1 {
+	position: absolute;
+		right: 10px;
+		bottom: 10px;	
+	line-height: 90%;		
+	display: inline-block;
+	text-align: right;
+}
+.project-main {
+	width: 920px;
+}
+.project-main p {
+	color: #333;
+	font: normal 1.3em  Arial, sans-serif;
+	text-shadow: 1px 1px 1px #FFF;	
+	line-height: 1.5;
+	padding: 0 0 0 2em;
+}
+
+.project-main img {
+	background: #FFF;
+	margin: 1em 0;
+	padding: 10px;
+	width: 900px;
+}
+.project-main .date-completed {
+	border-left: 15px solid #2121fc;
+	color: #666;
+	font: normal 2em "PT Sans Caption", Arial, sans-serif;
+	letter-spacing: -0.1em;
+	line-height: 1;
+	padding: 0 0 0 0.9em;
+	text-transform: uppercase;
+}
+.sub-image {
+	border: 5px solid #FFF;
+	display: inline-block;
+	opacity: 0.9;
+	height: 300px;
+	width: 440px;
+}
+.sub-image.wic1 {
+	background: url('../../images/wiclayout.png') no-repeat 0 5% ;
+	background-size: 100%;
+}
+.sub-image.wic2 {
+	background: url('../../images/wiclayout-v2.png') no-repeat 50% 5% ;
+	background-size: 110%;
+}
+
+.sub-image.wine1 {
+	background: url('../../images/wine1.png') no-repeat 50% 85% ;
+	background-size: 100%;
+}
+.sub-image.wine2 {
+	background: url('../../images/wine2.png') no-repeat 50% 5% ;
+	background-size: 100%;
+}
+.summary {
+	margin: 2em 0;
+}
+
+
+/** Utility **/
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+footer {
+	min-height: 300px;
+	margin: 2em 0 0 0;
+}
+footer .col {
+	border-top: 5px solid #ffe13e;
+	color: #555;
+	font: normal 14px Georgia, sans-serif;
+	float: left;
+	width: 240px;
+	letter-spacing: 0;
+	line-height: -0.5;
+	padding: 1em 0.2em;
+	margin: 0 1em 0 3em;
+}
+footer .col-main {
+	text-align: justify;	
+	width: 380px;
+}
+footer h1 {
+	color: #333;
+	font: bold 1.5em "PT Sans Caption", Arial, sans-serif;
+}
+a {
+	color: #2121fc;
+	font: normal 1em "PT Sans Caption", Arial, sans-serif;
+	text-decoration: none;
+}
+a:hover {
+	color: #f00033;
+}
+ul {
+	list-style: none;
+}
+footer a {
+	letter-spacing: 1px;
+}
+
+
+@media (max-width: 1400px) {
+	#bg-fixed {
+		background-size: 600px 600px;
+	}
+}
+
+@media(max-width: 1000px) {
+	#bg-fixed {
+		background-size: 400px 400px;
+	}
+}
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
