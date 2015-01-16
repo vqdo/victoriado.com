@@ -12,15 +12,17 @@
 		<nav class="cf">
 			<div class="container">
 				<h1 id="identity" class="fl">Victoria Do</h1>
-				<ul class="fl">
-					<li><a href="/">
+ 				<ul class="fl">
+ 					<li><a href="#portfolio-contents">Works</a></li>
+ 					<li><a href="/resume.pdf">Resume</a></li>
+<!-- 					<li><a href="/">
 						Works
 						</a>
 					</li>		
 					<li><a href="/">Contact</a></li>
-					<li><a href="/">About</a></li>
+					<li><a href="/">About</a></li> -->
 
-				</ul>
+				</ul> 
 				<a class="mailto fr" href="mailto:victoriado@outlook.com">
 					<span class="hidetext">Mail</span>
 				</a>			
@@ -36,23 +38,30 @@
 				<div class="intro block container">
 					<div class="intro-text">			
 						<div class="about-text">
-							<h1>Interaction Design <br>&amp; Web Development</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sem lobortis, venenatis orci tincidunt, fermentum diam. Aenean sed elit rutrum mi cursus consequat. Aenean sit amet erat eget nisl dapibus placerat eu sit amet velit. M</p>
-							<p> Morbi a porta metus. In ligula libero, varius nec ipsum quis, sodales pellentesque purus. Aenean tristique pulvinar eros, vel luctus lectus faucibus ut. Curabitur non est eu erat interdum sagittis.  </p>
+							<h1>I'm a front-end developer and web designer.</h1>
+
+
+							<p>I love to build things... especially websites!</p>
+
 						</div>
 
-						<div class="skill-box-container">
-							<div class="skill-box cf">
-								<img class="icon-large" src="images/icon/icon-code.png" alt="code">
-								<h2>Code</h2>
+						<div class="fr skill-box-container">
+							<div class="skill-box fr">
+								
+								<img class="fr icon-large" src="images/icon/icon-code.png" alt="code">
+								<h2>Code</h2>	
+
 							</div>
-							<div class="skill-box cf">
-								<img class="icon-large" src="images/icon/icon-pencil.png" alt="design">
-								<h2>Design</h2>
+							<div class="skill-box fr">
+														
+								<img class="fr icon-large" src="images/icon/icon-pencil.png" alt="design">
+								<h2>Design</h2>	
 							</div>
-							<div class="skill-box">
-								<img class="icon-large" src="images/icon/icon-ux.png" alt="user experience">
+							<div class="skill-box fr">
+							
+								<img class="fr icon-large" src="images/icon/icon-ux.png" alt="user experience">
 								<h2>User Experience</h2>
+
 							</div>
 						</div>
 					</div>
@@ -70,7 +79,7 @@
 					<li id="link-pugs" class="type-web"><a href="#page-pugs">Pug Adoption</a></li>
 					<li id="link-ryb" class="type-web"><a href="#page-ryb">Portfolio - RYB</a></li>	
 					<li id="link-wic" class="type-web"><a href="#page-wic">Women in Computing</a></li>
-					<li id="link-wine" class="type-mobile"><a href="#page-pugs">Winetastic!</a></li>
+					<li id="link-wine" class="type-mobile"><a href="#page-winetastic">Winetastic!</a></li>
 				</ul>
 			</div>
 			<div id="portfolio-contents">
@@ -117,7 +126,7 @@
 	                    <a href="/" class="see-more-button">
 	                        <img src="images/thumb/pugpage.png" alt="" />
 	                        <div class="thumb-title"></div>
-	                        <h1 class="thumb-title">University Redesign</h1>                            
+	                        <h1 class="thumb-title">Pug Adoption Concept and Design</h1>                            
 	                    </a>            
 	                    <div class="more-info">
 	                        <p>Having determined that there isn't quite enough pug love in the world yet, my teammates and I tackled the challenge of organizing and building a pug information and adoption site. </p>
@@ -136,10 +145,11 @@
 						<a href="/" class="see-more-button">
 							<img src="images/thumb/ryb-portfolio.png" alt="">
 							<div class="thumb-title"></div>
-							<h1 class="thumb-title">University Redesign</h1>							
+							<h1 class="thumb-title">Personal Portfolio</h1>							
 						</a>					
 						<div class="more-info">
 							<p>A portfolio design featuring vibrant splashes of red, yellow, and blue.</p>
+	                        <a class="goto-details" href="#page-pugs">Go in-depth</a>							
 						</div>					
 					</div>	
 					<div id="thumb-wic" class="portfolio-thumb">
@@ -148,12 +158,13 @@
 							<div class="portfolio-icon icon-design"></div>
 						</div>				
 						<a href="/" class="see-more-button">
-							<img src="images/thumb/ryb-portfolio.png" alt="">
+							<img src="images/wic-thumb.png" alt="">
 							<div class="thumb-title"></div>
 							<h1 class="thumb-title">WIC Web Design</h1>							
 						</a>					
 						<div class="more-info">
-							<p>A portfolio design featuring vibrant splashes of red, yellow, and blue.</p>
+							<p>A few designs for the UCSD organization Women in Computing.</p>
+	                        <a class="goto-details" href="#page-pugs">Go in-depth</a>							
 						</div>					
 					</div>									                   
 	                <div id="thumb-wine" class="portfolio-thumb android">
@@ -175,6 +186,7 @@
 						</a>				
 						<div class="more-info">
 							<p>Android Application for wine-lovers to discover, track, and rate wines, with features like Wine of the Day and Random Facts.</p>
+	                        <a class="goto-details" href="#page-pugs">Go in-depth</a>							
 						</div>					
 					</div>				
 	            </div>   
@@ -182,7 +194,12 @@
 	            <!-- UNIVERSITY OF LEICESTER -->
 
 				<section id="page-leicester" class="works-page">
-					<div class="page-back"><a href="#page-overview">&laquo; Back</a></div>
+					<div class="page-nav cf">
+						<a class="page-back fl" href="#page-overview"> Back</a>
+						<a class="open-new fr" target="_blank" href="http://victoriado.com/leicester">     
+	                            View Live        
+	                    </a>        						
+					</div>
 					<div class="works-title">
 						<h1>University of Leicester</h1> 
 						<h2>Information Architecture and Redesign <span class="fr date">December 2014</span></h2>
@@ -212,16 +229,104 @@
 
 
 				<section id="page-pugs" class="works-page">
-					<div class="page-back"><a href="#page-overview">&laquo; Back</a></div>
+					<div class="page-nav"><a class="page-back" href="#page-overview"> Back</a>
+						<a class="open-new fr" target="_blank" href="http://pugs.victoriado.com">     
+	                            View Live        
+	                    </a> 
+					</div>
 					<div class="works-title">
 						<h1>Pug Adoption</h1> 
 						<h2>Information Architecture and Design<span class="fr date">December 2014</span></h2>
 					</div>
+
+					<p>When we decided to create a "pug hub" for the web, we looked to other dog adoption sites for inspiration. We wanted a cross between larger, more general sites like <a href="http://adoptapet.com">adoptapet.com</a> and the more intimate, down-to-earth nature of individual adoption agencies.</p>
+
+					<p>Pugs are such a silly, lovable breed - we wanted that to reflect in the color scheme and design.</p>
+
+					<div class="works-img-box">
+						<img src="images/indepth/pugs-adoptsearch.png" alt="">
+					</div>
+
+					<p>At the same time, pugs are also notorious for their health problems. It was vital we provide all necessary information to potential new owners.</p>
+
+					<div class="works-img-box">
+						<img src="images/indepth/pugs-info.png" alt="">
+					</div>			
+
+					<p>Each pug has an expandable view that opens to view more information about that specific pug.</p>	
 				</section>	
 				<section id="page-ryb" class="works-page">
-					<div class="page-back"><a href="#page-overview">&laquo; Back</a></div>
-					<h1>Personal Website: RYB</h1>
-				</section>					    				
+					<div class="page-nav"><a class="page-back" href="#page-overview"> Back</a>
+
+						<a class="open-new fr" target="_blank" href="http://victoriado.com/ryb">     
+	                            View Live        
+	                    </a> 
+					</div>
+					<div class="works-title">
+						<h1>Personal Website: RYB</h1> 
+						<h2>Portfolio<span class="fr date">October 2014</span></h2>
+					</div>
+
+					<div class="works-img-box left">
+						<img src="images/indepth/ryb-portfolio.png" alt="">
+					</div>		
+					<div class="works-img-box-half fl">
+						<img src="images/indepth/ryb-title.png" alt="">
+					</div>	
+					<div class="works-img-box-half fr">
+						<img src="images/indepth/ryb-color.png" alt="">
+					</div>	
+				</section>	
+				<section id="page-wic" class="works-page">
+					<div class="page-nav"><a class="page-back" href="#page-overview">Back</a></div>
+					<div class="works-title">
+						<h1>Women in Computing</h1> 
+						<h2>Redesign and Concepts<span class="fr date">October 2012</span></h2>
+					</div>
+
+					<div class="works-img-box">
+						<img src="images/wic-feminine.png" alt="">
+					</div>					
+
+					<div class="cf">
+						<div class="works-img-box-half tall fl">
+							<img src="images/wiclayout-v2.png" alt="">
+						</div>	
+						<div class="works-img-box-half tall fr">
+							<img src="images/wiclayout.png" alt="">
+						</div>			
+					</div>			
+
+					<p>As a rising sophomore, I was excited to learn that Women in Computing at UCSD was redesigning their website. I contacted WIC's webmaster, and she was kind enough to let me pitch some ideas. In the years since working on this project, WIC has made a huge impact on the UCSD campus and has done a fantastic job furthering their mission.</p>
+
+					<p>The featured design is definitely the most feminine one I did. The light color scheme, the script writing, and the ample amount of white space invokes a general "scrapbooking" vibe. Later iterations of the design held onto the feminine component, but better served the purpose of the organization.</p>
+
+				</section>						
+				<section id="page-winetastic" class="works-page">
+					<div class="page-nav"><a class="page-back" href="#page-overview"> Back</a>
+					<a target="_blank" class="open-new fr" href="https://github.com/vqdo/winetastic-app">
+						View Live
+					</a>
+
+					</div>
+					<div class="works-title">
+						<h1>Winetastic!</h1> 
+						<h2>Android Application<span class="fr date">April 2013</span></h2>
+					</div>
+
+					<div class="works-img-box-half tall fl">
+						<img src="images/wine1.png" alt="">
+					</div>	
+					<div class="works-img-box-half tall fr">
+						<img src="images/wine2.png" alt="">
+					</div>						
+
+
+					<p>We're fortunate here in California to have a lively wine industry. This is a wine-cataloguing app perfect for those who want to keep track of what wines they've tried and would like to buy.</p>
+
+					<p>I played a big role designing the user interface and developing the wine search and information pages. This project was a team effort completed in the months of April - June 2013. It was developed in Java using the Android SDK and SQLite DBMS.</p>
+
+				</section>									    				
 			</div>
 
 		</section>

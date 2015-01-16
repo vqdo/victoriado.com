@@ -61,11 +61,16 @@ p, a {
 }
 
 /* line 30, ../sass/master.scss */
+p {
+  margin: 0 0 20px 0;
+}
+
+/* line 33, ../sass/master.scss */
 a {
   text-decoration: none;
 }
 
-/* line 33, ../sass/master.scss */
+/* line 36, ../sass/master.scss */
 strong {
   font-weight: bold;
 }
@@ -73,7 +78,7 @@ strong {
 /** 
  * Header / first panel 
  *************************/
-/* line 40, ../sass/master.scss */
+/* line 43, ../sass/master.scss */
 #identity {
   color: #FFF;
   font: bold 24px "Droid Sans", Helvetica, sans-serif;
@@ -82,25 +87,25 @@ strong {
   padding: 0 20px;
 }
 
-/* line 47, ../sass/master.scss */
+/* line 50, ../sass/master.scss */
 .intro-panel {
   color: #FFF;
   height: 380px;
   z-index: -1;
 }
 
-/* line 52, ../sass/master.scss */
+/* line 55, ../sass/master.scss */
 header {
   padding-top: 50px;
 }
 
-/* line 55, ../sass/master.scss */
+/* line 58, ../sass/master.scss */
 header .block {
   float: left;
   height: 100%;
 }
 
-/* line 59, ../sass/master.scss */
+/* line 62, ../sass/master.scss */
 header .brand {
   background: url("../images/fresh_snow.png");
   width: 100%;
@@ -109,7 +114,7 @@ header .brand {
   z-index: -2;
 }
 
-/* line 66, ../sass/master.scss */
+/* line 69, ../sass/master.scss */
 .brand img {
   width: 455px;
   max-height: 650px;
@@ -120,13 +125,13 @@ header .brand {
   z-index: -1;
 }
 
-/* line 75, ../sass/master.scss */
+/* line 78, ../sass/master.scss */
 header .intro {
   height: auto;
   position: absolute;
 }
 
-/* line 79, ../sass/master.scss */
+/* line 82, ../sass/master.scss */
 .intro-text {
   background: url("../images/bg-geo2.png") #f76e50;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;
@@ -134,42 +139,48 @@ header .intro {
   height: 360px;
 }
 
-/* line 85, ../sass/master.scss */
+/* line 88, ../sass/master.scss */
 .intro-text p {
-  color: #FFF;
+  background: #041B29;
+  border-radius: 10px;
+  color: #f76e50;
+  display: inline-block;
   font: normal 16px "Droid Sans", Helvetica, sans-serif;
   line-height: 1.5;
-  padding: 10px 0;
+  margin: 10px 0;
+  padding: 5px 10px;
+  letter-spacing: 1px;
 }
 
-/* line 91, ../sass/master.scss */
+/* line 99, ../sass/master.scss */
 .intro-text h1 {
-  font: bold 24px "Libre Baskerville", "Times New Roman", sans-serif;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
 }
 
-/* line 94, ../sass/master.scss */
+/* line 103, ../sass/master.scss */
 .icon-large {
   width: 120px;
 }
 
-/* line 97, ../sass/master.scss */
+/* line 106, ../sass/master.scss */
+.skill-box-container {
+  width: 250px;
+}
+
+/* line 109, ../sass/master.scss */
 .skill-box-container, .about-text {
   float: left;
   height: 100%;
 }
 
-/* line 101, ../sass/master.scss */
-.skill-box-container {
-  padding: 0 40px;
-}
-
-/* line 104, ../sass/master.scss */
+/* line 114, ../sass/master.scss */
 .about-text {
-  width: 350px;
-  padding: 0 20px;
+  width: 660px;
+  padding: 75px 20px 0 20px;
 }
 
-/* line 108, ../sass/master.scss */
+/* line 118, ../sass/master.scss */
 .skill-box {
   font: bold 14px "Droid Sans", Helvetica, sans-serif;
   text-transform: uppercase;
@@ -177,22 +188,22 @@ header .intro {
   padding: 8px 0;
 }
 
-/* line 114, ../sass/master.scss */
+/* line 124, ../sass/master.scss */
 .skill-box img {
-  float: left;
+  float: right;
 }
 
-/* line 117, ../sass/master.scss */
+/* line 127, ../sass/master.scss */
 .skill-box h2 {
   display: inline-block;
-  float: left;
+  float: right;
   padding: 40px 30px;
 }
 
 /****************************
  * Navigation
  ****************************/
-/* line 126, ../sass/master.scss */
+/* line 136, ../sass/master.scss */
 nav {
   background: #041B29;
   height: 50px;
@@ -203,7 +214,7 @@ nav {
   z-index: 10;
 }
 
-/* line 135, ../sass/master.scss */
+/* line 145, ../sass/master.scss */
 nav ul a {
   color: #FFF;
   display: inline-block;
@@ -214,7 +225,7 @@ nav ul a {
   text-transform: lowercase;
 }
 
-/* line 144, ../sass/master.scss */
+/* line 154, ../sass/master.scss */
 .mailto {
   background: url("../images/icon/icon-mail.png");
   height: 36px;
@@ -222,12 +233,12 @@ nav ul a {
   margin: 6px;
 }
 
-/* line 151, ../sass/master.scss */
+/* line 161, ../sass/master.scss */
 .mailto:hover {
   background: url("../images/icon/icon-mail-hover.png");
 }
 
-/* line 154, ../sass/master.scss */
+/* line 164, ../sass/master.scss */
 .email-box {
   background: transparent;
   border: 0;
@@ -240,19 +251,19 @@ nav ul a {
   width: 200px;
 }
 
-/* line 165, ../sass/master.scss */
+/* line 175, ../sass/master.scss */
 nav.fixed {
   position: fixed;
   top: 0;
   right: 0;
 }
 
-/* line 170, ../sass/master.scss */
+/* line 180, ../sass/master.scss */
 nav ul {
   width: 400px;
 }
 
-/* line 173, ../sass/master.scss */
+/* line 183, ../sass/master.scss */
 nav li {
   float: left;
 }
@@ -260,7 +271,7 @@ nav li {
 /****************************
  * Body
  ****************************/
-/* line 181, ../sass/master.scss */
+/* line 191, ../sass/master.scss */
 .container {
   margin: auto;
   width: 1024px;
@@ -269,17 +280,17 @@ nav li {
 /****************************
  * Works
  ****************************/
-/* line 193, ../sass/master.scss */
+/* line 203, ../sass/master.scss */
 .all-works {
   margin: 80px 0 0 0;
 }
 
-/* line 196, ../sass/master.scss */
+/* line 206, ../sass/master.scss */
 section .title {
   width: 200px;
 }
 
-/* line 200, ../sass/master.scss */
+/* line 210, ../sass/master.scss */
 section .title ul {
   float: right;
   padding: 10px 0;
@@ -287,13 +298,13 @@ section .title ul {
   width: 100%;
 }
 
-/* line 206, ../sass/master.scss */
+/* line 216, ../sass/master.scss */
 section .title ul a {
   color: #555;
   font: normal 14px "Droid Sans", Helvetica, sans-serif;
 }
 
-/* line 211, ../sass/master.scss */
+/* line 221, ../sass/master.scss */
 .title h1 {
   color: #CCC;
   font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
@@ -301,7 +312,7 @@ section .title ul a {
   line-height: 0.9;
 }
 
-/* line 217, ../sass/master.scss */
+/* line 227, ../sass/master.scss */
 .title h2 {
   color: #f38647;
   font: bold 11px "Droid Sans", Helvetica, sans-serif;
@@ -310,7 +321,7 @@ section .title ul a {
   float: right;
 }
 
-/* line 224, ../sass/master.scss */
+/* line 234, ../sass/master.scss */
 .portfolio-thumb {
   background: #FFF;
   border: 1px solid #CCC;
@@ -321,30 +332,31 @@ section .title ul a {
   width: 320px;
 }
 
-/* line 233, ../sass/master.scss */
+/* line 243, ../sass/master.scss */
 .portfolio-thumb img {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   opacity: 0.8;
+  max-width: 100%;
 }
 
-/* line 238, ../sass/master.scss */
+/* line 249, ../sass/master.scss */
 .portfolio-thumb.android {
   border-top: 8px solid #669966;
 }
 
-/* line 241, ../sass/master.scss */
+/* line 252, ../sass/master.scss */
 .portfolio-thumb .see-more-button {
   display: block;
   position: relative;
 }
 
-/* line 245, ../sass/master.scss */
+/* line 256, ../sass/master.scss */
 .portfolio-thumb a:hover img {
   opacity: 1;
 }
 
-/* line 248, ../sass/master.scss */
+/* line 259, ../sass/master.scss */
 .portfolio-thumb p {
   color: #041B29;
   font: normal 14px "Droid Sans", Helvetica, sans-serif;
@@ -352,7 +364,7 @@ section .title ul a {
   padding: 15px;
 }
 
-/* line 254, ../sass/master.scss */
+/* line 265, ../sass/master.scss */
 .goto-details {
   background: #f76e50;
   color: #FFF;
@@ -364,12 +376,12 @@ section .title ul a {
   text-transform: uppercase;
 }
 
-/* line 264, ../sass/master.scss */
+/* line 275, ../sass/master.scss */
 .goto-details:hover {
   background: #041B29;
 }
 
-/* line 267, ../sass/master.scss */
+/* line 278, ../sass/master.scss */
 .see-more {
   background: #000;
   color: #FFF;
@@ -382,34 +394,39 @@ section .title ul a {
   z-index: 15;
 }
 
-/* line 278, ../sass/master.scss */
+/* line 289, ../sass/master.scss */
 .more-info {
   display: none;
 }
 
-/* line 281, ../sass/master.scss */
+/* line 292, ../sass/master.scss */
+.more-info p {
+  margin: 0;
+}
+
+/* line 295, ../sass/master.scss */
 .expanded .more-info {
   display: block;
 }
 
-/* line 284, ../sass/master.scss */
+/* line 298, ../sass/master.scss */
 .col {
   padding: 0 5px;
 }
 
-/* line 287, ../sass/master.scss */
+/* line 301, ../sass/master.scss */
 .works-links li a {
   display: block;
   padding: 5px 0;
 }
 
-/* line 291, ../sass/master.scss */
+/* line 305, ../sass/master.scss */
 .works-links li:hover a {
   color: #f38647;
   font-weight: bold;
 }
 
-/* line 296, ../sass/master.scss */
+/* line 310, ../sass/master.scss */
 #page-overview {
   width: 800px;
 }
@@ -417,37 +434,37 @@ section .title ul a {
 /***
  * Works page
  */
-/* line 303, ../sass/master.scss */
+/* line 317, ../sass/master.scss */
 #portfolio-contents {
   margin: 0 0 0 240px;
 }
 
-/* line 306, ../sass/master.scss */
+/* line 320, ../sass/master.scss */
 .works-page {
   display: none;
   padding: 0 0 40px 0;
 }
 
-/* line 310, ../sass/master.scss */
+/* line 324, ../sass/master.scss */
 .works-page h2 {
   color: #041B29;
   font: bold 24px "Libre Baskerville", "Times New Roman", sans-serif;
   padding: 20px 0;
 }
 
-/* line 315, ../sass/master.scss */
+/* line 329, ../sass/master.scss */
 .works-title {
   margin: 20px 0;
 }
 
-/* line 318, ../sass/master.scss */
+/* line 332, ../sass/master.scss */
 .works-title h1 {
   color: #041B29;
   font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
   max-width: 1024px;
 }
 
-/* line 323, ../sass/master.scss */
+/* line 337, ../sass/master.scss */
 .works-title h2 {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -459,13 +476,13 @@ section .title ul a {
   width: 100%;
 }
 
-/* line 333, ../sass/master.scss */
+/* line 347, ../sass/master.scss */
 .works-title h2 .date {
   color: #f76e50;
   font-weight: bold;
 }
 
-/* line 337, ../sass/master.scss */
+/* line 351, ../sass/master.scss */
 .works-page p {
   color: #666;
   font: normal 18px "Droid Sans", Helvetica, sans-serif;
@@ -474,17 +491,22 @@ section .title ul a {
 }
 
 /* Images */
-/* line 345, ../sass/master.scss */
-.works-img-box {
+/* line 359, ../sass/master.scss */
+.works-img-box, .works-img-box-half {
   border: 1px solid #CCC;
   width: 100%;
-  height: 400px;
+  height: 350px;
   margin: 20px 0;
   overflow: hidden;
   position: relative;
 }
 
-/* line 353, ../sass/master.scss */
+/* line 367, ../sass/master.scss */
+.works-img-box.left img {
+  position: static;
+}
+
+/* line 370, ../sass/master.scss */
 .works-img-box img {
   position: absolute;
   top: -100%;
@@ -492,17 +514,69 @@ section .title ul a {
   right: -100%;
   bottom: -100%;
   margin: auto;
+  height: 100%;
+}
+
+/* line 379, ../sass/master.scss */
+.works-img-box-half.tall img {
+  width: 100%;
+}
+
+/* line 382, ../sass/master.scss */
+.works-img-box-half {
+  width: 375px;
+  height: 300px;
+}
+
+/***
+ Page nav
+ */
+/* line 391, ../sass/master.scss */
+.page-nav {
+  width: 100%;
+  height: 30px;
+}
+
+/* line 395, ../sass/master.scss */
+.page-nav a {
+  color: #041B29;
+  font: bold 14px "Droid Sans", Helvetica, sans-serif;
+}
+
+/* line 399, ../sass/master.scss */
+.page-nav a:hover {
+  color: #f76e50;
+}
+
+/* line 402, ../sass/master.scss */
+a.page-back {
+  background: #041B29;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+/* line 409, ../sass/master.scss */
+a.page-back:hover {
+  background: #f76e50;
+  color: #FFF;
+}
+
+/* line 413, ../sass/master.scss */
+.page-nav a.open-new {
+  padding: 8px 0;
 }
 
 /***
  * Works thumbnail title overlay
  */
-/* line 366, ../sass/master.scss */
+/* line 422, ../sass/master.scss */
 .thumb-title {
   display: none;
 }
 
-/* line 369, ../sass/master.scss */
+/* line 425, ../sass/master.scss */
 div.thumb-title {
   background: #f76e50;
   height: 100%;
@@ -513,7 +587,7 @@ div.thumb-title {
   z-index: 2;
 }
 
-/* line 378, ../sass/master.scss */
+/* line 434, ../sass/master.scss */
 h1.thumb-title {
   color: #FFF;
   font: bold 32px "Droid Sans", Helvetica, sans-serif;
@@ -530,12 +604,12 @@ h1.thumb-title {
 /*****************************
  * Portfolio icons
  *****************************/
-/* line 395, ../sass/master.scss */
+/* line 451, ../sass/master.scss */
 .portfolio-icons {
   padding: 3px;
 }
 
-/* line 398, ../sass/master.scss */
+/* line 454, ../sass/master.scss */
 .portfolio-icon {
   border: 1px solid transparent;
   color: #FFF;
@@ -548,44 +622,44 @@ h1.thumb-title {
   text-transform: uppercase;
 }
 
-/* line 411, ../sass/master.scss */
+/* line 467, ../sass/master.scss */
 .icon-web {
   background: #333;
 }
 
-/* line 414, ../sass/master.scss */
+/* line 470, ../sass/master.scss */
 .icon-web:before {
   content: "web";
 }
 
-/* line 417, ../sass/master.scss */
+/* line 473, ../sass/master.scss */
 .icon-design {
   border: 1px solid #9966CC;
   color: #9966CC;
 }
 
-/* line 421, ../sass/master.scss */
+/* line 477, ../sass/master.scss */
 .icon-design:before {
   content: "design";
 }
 
-/* line 424, ../sass/master.scss */
+/* line 480, ../sass/master.scss */
 .icon-android {
   background: #669966;
 }
 
-/* line 427, ../sass/master.scss */
+/* line 483, ../sass/master.scss */
 .icon-android:before {
   content: "android";
 }
 
-/* line 430, ../sass/master.scss */
+/* line 486, ../sass/master.scss */
 .icon-app {
   border: 1px solid #009999;
   color: #009999;
 }
 
-/* line 434, ../sass/master.scss */
+/* line 490, ../sass/master.scss */
 .icon-app:before {
   content: "app";
 }
@@ -593,33 +667,33 @@ h1.thumb-title {
 /***************************
  * Top right corner icons
  ***************************/
-/* line 441, ../sass/master.scss */
+/* line 497, ../sass/master.scss */
 .icon-open, .icon-github {
   float: right;
   opacity: 0.6;
   padding: 0 2px;
 }
 
-/* line 446, ../sass/master.scss */
+/* line 502, ../sass/master.scss */
 a:hover .icon-open, a:hover .icon-github {
   opacity: 1;
 }
 
-/* line 449, ../sass/master.scss */
+/* line 505, ../sass/master.scss */
 .icon-open {
   background: url("../images/icon/add65.png");
   width: 12px;
   height: 16px;
 }
 
-/* line 454, ../sass/master.scss */
+/* line 510, ../sass/master.scss */
 .icon-github {
   background: url("../images/icon/icon-github.png") no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 459, ../sass/master.scss */
+/* line 515, ../sass/master.scss */
 .open-new-label {
   color: #666;
   display: none;
@@ -630,51 +704,46 @@ a:hover .icon-open, a:hover .icon-github {
 /*****************************
  * Footer
  *****************************/
-/* line 470, ../sass/master.scss */
+/* line 526, ../sass/master.scss */
 footer {
   background: #041B29;
   color: #FFF;
   width: 100%;
 }
 
-/* line 475, ../sass/master.scss */
+/* line 531, ../sass/master.scss */
 footer section {
   float: left;
   width: 300px;
   padding: 20px;
 }
 
-/* line 480, ../sass/master.scss */
+/* line 536, ../sass/master.scss */
 footer h1 {
   font: bold 18px "Droid Sans", Helvetica, sans-serif;
   text-transform: uppercase;
   margin: 10px 0 20px 0;
 }
 
-/* line 485, ../sass/master.scss */
+/* line 541, ../sass/master.scss */
 footer p, footer a {
   font: normal 14px "Droid Sans", Helvetica, sans-serif;
 }
 
-/* line 488, ../sass/master.scss */
-footer p {
-  margin: 0 0 20px 0;
-}
-
-/* line 491, ../sass/master.scss */
+/* line 544, ../sass/master.scss */
 footer a {
   color: #f38647;
   font-weight: bold;
 }
 
-/* line 495, ../sass/master.scss */
+/* line 548, ../sass/master.scss */
 .social-link img {
   width: 36px;
   height: 36px;
   padding: 0 10px 0 0;
 }
 
-/* line 500, ../sass/master.scss */
+/* line 553, ../sass/master.scss */
 .attr, .attr a {
   font: normal 12px "Droid Sans", Helvetica, sans-serif;
 }
@@ -682,17 +751,17 @@ footer a {
 /*****************************
  * Utility
  *****************************/
-/* line 508, ../sass/master.scss */
+/* line 561, ../sass/master.scss */
 .hidetext {
   opacity: 0;
 }
 
-/* line 512, ../sass/master.scss */
+/* line 565, ../sass/master.scss */
 .fl {
   float: left;
 }
 
-/* line 515, ../sass/master.scss */
+/* line 568, ../sass/master.scss */
 .fr {
   float: right;
 }
@@ -706,7 +775,7 @@ footer a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 528, ../sass/master.scss */
+/* line 581, ../sass/master.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -715,7 +784,7 @@ footer a {
   /* 2 */
 }
 
-/* line 534, ../sass/master.scss */
+/* line 587, ../sass/master.scss */
 .cf:after {
   clear: both;
 }
@@ -724,42 +793,7 @@ footer a {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 542, ../sass/master.scss */
+/* line 595, ../sass/master.scss */
 .cf {
   *zoom: 1;
-}
-
-@media (max-width: 1120px) {
-  /* line 547, ../sass/master.scss */
-  header {
-    height: 300px;
-  }
-
-  /* line 550, ../sass/master.scss */
-  header .brand {
-    width: 200px;
-  }
-
-  /* line 553, ../sass/master.scss */
-  .brand img {
-    width: 300px;
-  }
-
-  /* line 556, ../sass/master.scss */
-  .intro-text {
-    margin: 0 0 0 200px;
-    padding: 20px 40px 0 40px;
-    height: 270px;
-  }
-
-  /* line 561, ../sass/master.scss */
-  .intro-text h2 {
-    padding: 0 0 0 0;
-  }
-
-  /* line 564, ../sass/master.scss */
-  .intro-text p {
-    font-size: 14px;
-    padding: 20px 0 0 40px;
-  }
 }

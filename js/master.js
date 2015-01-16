@@ -210,7 +210,7 @@ $(document).ready(function() {
 	home.pageController.init({
 		default: $('#page-overview'),
 		container: $('#portfolio-contents'),
-		links: $('.works-links a').add($('.page-back a')).add($('.goto-details'))
+		links: $('.works-links a').add($('.page-back')).add($('.goto-details'))
 	});
 
 	var highlightText = function(textarea) {

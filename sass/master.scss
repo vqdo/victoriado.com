@@ -27,6 +27,9 @@ p, a {
     font: normal 16px $serif-stack;
     line-height: 1.5;
 }
+p {
+    margin: 0 0 20px 0;    
+}
 a {
     text-decoration: none;
 }
@@ -83,27 +86,34 @@ header .intro {
     height: 360px;
 }
 .intro-text p {
-    color: #FFF;
+    background: $nav-color;
+    border-radius: 10px;
+    color: $accent-color;;
+    display: inline-block;
     font: normal 16px $font-stack;
     line-height: 1.5;    
-    padding: 10px 0;
+    margin: 10px 0;
+    padding: 5px 10px;
+    letter-spacing: 1px;
 }
 .intro-text h1 {
-    font: bold 24px $serif-stack;
+    text-shadow: 0 0 3px rgba(0,0,0,0.2);
+    font: bold 48px $serif-stack;
 }
 .icon-large {
     width: 120px;
+}
+.skill-box-container {
+    width: 250px;
 }
 .skill-box-container, .about-text {
     float: left;
     height: 100%;
 }
-.skill-box-container {
-    padding: 0 40px;
-}
+
 .about-text {
-    width: 350px;
-    padding: 0 20px;
+    width: 660px;
+    padding: 75px 20px 0 20px;
 }
 .skill-box {
     font: bold 14px $font-stack;
@@ -112,11 +122,11 @@ header .intro {
     padding: 8px 0;
 }
 .skill-box img {
-    float: left;    
+    float: right;   
 }
 .skill-box h2 {
     display: inline-block;
-    float: left;
+    float: right;
     padding: 40px 30px;
 }
 
@@ -233,7 +243,8 @@ section .title ul a {
 .portfolio-thumb img {
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC;
-    opacity: 0.8;   
+    opacity: 0.8;  
+    max-width: 100%; 
 }
 .portfolio-thumb.android {
     border-top: 8px solid #669966; 
@@ -277,6 +288,9 @@ section .title ul a {
 }
 .more-info {
     display: none;
+}
+.more-info p {
+    margin: 0;
 }
 .expanded .more-info {
     display: block;
@@ -342,13 +356,16 @@ section .title ul a {
  }
 
  /* Images */
- .works-img-box {
+ .works-img-box, .works-img-box-half {
     border: 1px solid #CCC;
     width: 100%;
-    height: 400px;
+    height: 350px;
     margin: 20px 0;
     overflow: hidden;
     position: relative;
+ }
+ .works-img-box.left img {
+    position: static;
  }
  .works-img-box img {
     position: absolute;
@@ -357,7 +374,46 @@ section .title ul a {
     right: -100%;
     bottom: -100%;
     margin: auto;
+    height: 100%;
  }
+ .works-img-box-half.tall img {
+    width: 100%;
+ }
+.works-img-box-half {
+    width: 375px;
+    height: 300px;
+}
+
+/***
+ Page nav
+ */
+
+.page-nav {
+    width: 100%;
+    height: 30px;
+}
+.page-nav a {
+    color: $nav-color;
+    font: bold 14px $font-stack;
+}
+.page-nav a:hover {
+    color: $accent-color;
+}
+a.page-back {
+    background: $nav-color;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-transform: uppercase;    
+}
+a.page-back:hover {
+    background: $accent-color;
+    color: #FFF;
+}
+.page-nav a.open-new {
+    padding: 8px 0;
+}
+
 
 /***
  * Works thumbnail title overlay
@@ -485,9 +541,6 @@ footer h1 {
 footer p, footer a {
     font: normal 14px $font-stack;
 }
-footer p {
-    margin: 0 0 20px 0;
-}
 footer a {
     color: $secondary-color;
     font-weight: bold;
@@ -541,28 +594,4 @@ footer a {
  */
 .cf {
     *zoom: 1;
-}
-
-@media (max-width: 1120px) {
-    header {
-        height: 300px;
-    }
-    header .brand {
-        width: 200px;
-    }
-    .brand img {
-        width: 300px;
-    }
-    .intro-text {
-        margin: 0 0 0 200px;
-        padding: 20px 40px 0 40px;
-        height: 270px;
-    }
-    .intro-text h2 {
-        padding: 0 0 0 0;        
-    }
-    .intro-text p {
-        font-size: 14px;
-        padding: 20px 0 0 40px;        
-    }
 }
