@@ -3,7 +3,7 @@ $font-size: 14pt;
 $accent-color: #f76e50;
 $secondary-color: #f38647;
 $background-color: #FFF; /*#f0e4c9;*/
-$default_brand_size: 380px;
+$intro-panel-size: 570px;
 $default_logo_size: 455px;
 $logo_offset: -850px;
 $padding: 20px;
@@ -49,7 +49,7 @@ strong {
  }
 .intro-panel {
     color: #FFF;  
-    height: $default-brand-size;
+    height: $intro-panel-size;
     z-index: -1;
 }
 header {
@@ -60,20 +60,19 @@ header .block {
     height: 100%;
 }
 header .brand {
-    background: url('../images/fresh_snow.png');
+    background: url('../images/bg-sd.jpg') 75%;
     width: 100%;
     overflow: hidden;
     position: relative;
-    z-index: -2;
 }
 .brand img {
     width: $default_logo_size;
     max-height: 650px;
     margin-left: $logo_offset;
     position: fixed;
-        top: -20px;
+        top: $header-height;
         left: 50%;
-    z-index: -1;
+    z-index: -11;
 }
 header .intro {
     height: auto;
@@ -81,54 +80,62 @@ header .intro {
 }
 .intro-text {
     background: url('../images/bg-geo2.png') $accent-color;
+    border-bottom: 15px solid $accent-color;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;     
     padding: 20px;
-    height: 360px;
-}
-.intro-text p {
-    background: $nav-color;
-    border-radius: 10px;
-    color: $accent-color;;
-    display: inline-block;
-    font: normal 16px $font-stack;
-    line-height: 1.5;    
-    margin: 10px 0;
-    padding: 5px 10px;
-    letter-spacing: 1px;
+    height: 220px;
 }
 .intro-text h1 {
     text-shadow: 0 0 3px rgba(0,0,0,0.2);
-    font: bold 48px $serif-stack;
+    font: bold 64px $serif-stack;
 }
 .icon-large {
+    display: block;
+    margin: auto;
     width: 120px;
 }
 .skill-box-container {
-    width: 250px;
+    height: 180px;
+    background: #193a4d;    
+    text-align: center;    
+    text-transform: uppercase;
+    width: 100%;
 }
 .skill-box-container, .about-text {
-    float: left;
     height: 100%;
 }
-
 .about-text {
-    width: 660px;
-    padding: 75px 20px 0 20px;
+    padding: 35px 20px 0 20px;
 }
 .skill-box {
-    font: bold 14px $font-stack;
-    text-transform: uppercase;
-    width: 350px;
-    padding: 8px 0;
+    padding: 20px 0 20px 0;
+    width: 341px;
 }
-.skill-box img {
-    float: right;   
+.skill-box-container h1 {
+    border-bottom: 1px solid $nav-color;
+    color: $accent-color;
+    font: normal 11px $font-stack;
+    letter-spacing: 2px;
+    padding: 30px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 .skill-box h2 {
-    display: inline-block;
-    float: right;
-    padding: 40px 30px;
+    display: inline;
+    color: #CCC;
+    font: normal 13px $font-stack;
+    line-height: 5;
 }
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $accent-color;    
+    margin: 0 auto;
+}
+// .arrow-down.blue {
+//     border-top: 20px solid #193a4d;      
+// }
 
 /****************************
  * Navigation

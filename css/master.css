@@ -90,7 +90,7 @@ strong {
 /* line 50, ../sass/master.scss */
 .intro-panel {
   color: #FFF;
-  height: 380px;
+  height: 570px;
   z-index: -1;
 }
 
@@ -107,103 +107,108 @@ header .block {
 
 /* line 62, ../sass/master.scss */
 header .brand {
-  background: url("../images/fresh_snow.png");
+  background: url("../images/bg-sd.jpg") 75%;
   width: 100%;
   overflow: hidden;
   position: relative;
-  z-index: -2;
 }
 
-/* line 69, ../sass/master.scss */
+/* line 68, ../sass/master.scss */
 .brand img {
   width: 455px;
   max-height: 650px;
   margin-left: -850px;
   position: fixed;
-  top: -20px;
+  top: 50px;
   left: 50%;
-  z-index: -1;
+  z-index: -11;
 }
 
-/* line 78, ../sass/master.scss */
+/* line 77, ../sass/master.scss */
 header .intro {
   height: auto;
   position: absolute;
 }
 
-/* line 82, ../sass/master.scss */
+/* line 81, ../sass/master.scss */
 .intro-text {
   background: url("../images/bg-geo2.png") #f76e50;
+  border-bottom: 15px solid #f76e50;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;
   padding: 20px;
-  height: 360px;
+  height: 220px;
 }
 
 /* line 88, ../sass/master.scss */
-.intro-text p {
-  background: #041B29;
-  border-radius: 10px;
-  color: #f76e50;
-  display: inline-block;
-  font: normal 16px "Droid Sans", Helvetica, sans-serif;
-  line-height: 1.5;
-  margin: 10px 0;
-  padding: 5px 10px;
-  letter-spacing: 1px;
-}
-
-/* line 99, ../sass/master.scss */
 .intro-text h1 {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
+  font: bold 64px "Libre Baskerville", "Times New Roman", sans-serif;
 }
 
-/* line 103, ../sass/master.scss */
+/* line 92, ../sass/master.scss */
 .icon-large {
+  display: block;
+  margin: auto;
   width: 120px;
 }
 
-/* line 106, ../sass/master.scss */
+/* line 97, ../sass/master.scss */
 .skill-box-container {
-  width: 250px;
+  height: 180px;
+  background: #193a4d;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-/* line 109, ../sass/master.scss */
+/* line 104, ../sass/master.scss */
 .skill-box-container, .about-text {
-  float: left;
   height: 100%;
 }
 
-/* line 114, ../sass/master.scss */
+/* line 107, ../sass/master.scss */
 .about-text {
-  width: 660px;
-  padding: 75px 20px 0 20px;
+  padding: 35px 20px 0 20px;
 }
 
-/* line 118, ../sass/master.scss */
+/* line 110, ../sass/master.scss */
 .skill-box {
-  font: bold 14px "Droid Sans", Helvetica, sans-serif;
-  text-transform: uppercase;
-  width: 350px;
-  padding: 8px 0;
+  padding: 20px 0 20px 0;
+  width: 341px;
 }
 
-/* line 124, ../sass/master.scss */
-.skill-box img {
-  float: right;
+/* line 114, ../sass/master.scss */
+.skill-box-container h1 {
+  border-bottom: 1px solid #041B29;
+  color: #f76e50;
+  font: normal 11px "Droid Sans", Helvetica, sans-serif;
+  letter-spacing: 2px;
+  padding: 30px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
-/* line 127, ../sass/master.scss */
+/* line 122, ../sass/master.scss */
 .skill-box h2 {
-  display: inline-block;
-  float: right;
-  padding: 40px 30px;
+  display: inline;
+  color: #CCC;
+  font: normal 13px "Droid Sans", Helvetica, sans-serif;
+  line-height: 5;
+}
+
+/* line 128, ../sass/master.scss */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f76e50;
+  margin: 0 auto;
 }
 
 /****************************
  * Navigation
  ****************************/
-/* line 136, ../sass/master.scss */
+/* line 143, ../sass/master.scss */
 nav {
   background: #041B29;
   height: 50px;
@@ -214,7 +219,7 @@ nav {
   z-index: 10;
 }
 
-/* line 145, ../sass/master.scss */
+/* line 152, ../sass/master.scss */
 nav ul a {
   color: #FFF;
   display: inline-block;
@@ -225,7 +230,7 @@ nav ul a {
   text-transform: lowercase;
 }
 
-/* line 154, ../sass/master.scss */
+/* line 161, ../sass/master.scss */
 .mailto {
   background: url("../images/icon/icon-mail.png");
   height: 36px;
@@ -233,12 +238,12 @@ nav ul a {
   margin: 6px;
 }
 
-/* line 161, ../sass/master.scss */
+/* line 168, ../sass/master.scss */
 .mailto:hover {
   background: url("../images/icon/icon-mail-hover.png");
 }
 
-/* line 164, ../sass/master.scss */
+/* line 171, ../sass/master.scss */
 .email-box {
   background: transparent;
   border: 0;
@@ -251,19 +256,19 @@ nav ul a {
   width: 200px;
 }
 
-/* line 175, ../sass/master.scss */
+/* line 182, ../sass/master.scss */
 nav.fixed {
   position: fixed;
   top: 0;
   right: 0;
 }
 
-/* line 180, ../sass/master.scss */
+/* line 187, ../sass/master.scss */
 nav ul {
   width: 400px;
 }
 
-/* line 183, ../sass/master.scss */
+/* line 190, ../sass/master.scss */
 nav li {
   float: left;
 }
@@ -271,7 +276,7 @@ nav li {
 /****************************
  * Body
  ****************************/
-/* line 191, ../sass/master.scss */
+/* line 198, ../sass/master.scss */
 .container {
   margin: auto;
   width: 1024px;
@@ -280,17 +285,17 @@ nav li {
 /****************************
  * Works
  ****************************/
-/* line 203, ../sass/master.scss */
+/* line 210, ../sass/master.scss */
 .all-works {
   margin: 80px 0 0 0;
 }
 
-/* line 206, ../sass/master.scss */
+/* line 213, ../sass/master.scss */
 section .title {
   width: 200px;
 }
 
-/* line 210, ../sass/master.scss */
+/* line 217, ../sass/master.scss */
 section .title ul {
   float: right;
   padding: 10px 0;
@@ -298,13 +303,13 @@ section .title ul {
   width: 100%;
 }
 
-/* line 216, ../sass/master.scss */
+/* line 223, ../sass/master.scss */
 section .title ul a {
   color: #555;
   font: normal 14px "Droid Sans", Helvetica, sans-serif;
 }
 
-/* line 221, ../sass/master.scss */
+/* line 228, ../sass/master.scss */
 .title h1 {
   color: #CCC;
   font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
@@ -312,7 +317,7 @@ section .title ul a {
   line-height: 0.9;
 }
 
-/* line 227, ../sass/master.scss */
+/* line 234, ../sass/master.scss */
 .title h2 {
   color: #f38647;
   font: bold 11px "Droid Sans", Helvetica, sans-serif;
@@ -321,7 +326,7 @@ section .title ul a {
   float: right;
 }
 
-/* line 234, ../sass/master.scss */
+/* line 241, ../sass/master.scss */
 .portfolio-thumb {
   background: #FFF;
   border: 1px solid #CCC;
@@ -332,7 +337,7 @@ section .title ul a {
   width: 320px;
 }
 
-/* line 243, ../sass/master.scss */
+/* line 250, ../sass/master.scss */
 .portfolio-thumb img {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
@@ -340,23 +345,23 @@ section .title ul a {
   max-width: 100%;
 }
 
-/* line 249, ../sass/master.scss */
+/* line 256, ../sass/master.scss */
 .portfolio-thumb.android {
   border-top: 8px solid #669966;
 }
 
-/* line 252, ../sass/master.scss */
+/* line 259, ../sass/master.scss */
 .portfolio-thumb .see-more-button {
   display: block;
   position: relative;
 }
 
-/* line 256, ../sass/master.scss */
+/* line 263, ../sass/master.scss */
 .portfolio-thumb a:hover img {
   opacity: 1;
 }
 
-/* line 259, ../sass/master.scss */
+/* line 266, ../sass/master.scss */
 .portfolio-thumb p {
   color: #041B29;
   font: normal 14px "Droid Sans", Helvetica, sans-serif;
@@ -364,7 +369,7 @@ section .title ul a {
   padding: 15px;
 }
 
-/* line 265, ../sass/master.scss */
+/* line 272, ../sass/master.scss */
 .goto-details {
   background: #f76e50;
   color: #FFF;
@@ -376,12 +381,12 @@ section .title ul a {
   text-transform: uppercase;
 }
 
-/* line 275, ../sass/master.scss */
+/* line 282, ../sass/master.scss */
 .goto-details:hover {
   background: #041B29;
 }
 
-/* line 278, ../sass/master.scss */
+/* line 285, ../sass/master.scss */
 .see-more {
   background: #000;
   color: #FFF;
@@ -394,39 +399,39 @@ section .title ul a {
   z-index: 15;
 }
 
-/* line 289, ../sass/master.scss */
+/* line 296, ../sass/master.scss */
 .more-info {
   display: none;
 }
 
-/* line 292, ../sass/master.scss */
+/* line 299, ../sass/master.scss */
 .more-info p {
   margin: 0;
 }
 
-/* line 295, ../sass/master.scss */
+/* line 302, ../sass/master.scss */
 .expanded .more-info {
   display: block;
 }
 
-/* line 298, ../sass/master.scss */
+/* line 305, ../sass/master.scss */
 .col {
   padding: 0 5px;
 }
 
-/* line 301, ../sass/master.scss */
+/* line 308, ../sass/master.scss */
 .works-links li a {
   display: block;
   padding: 5px 0;
 }
 
-/* line 305, ../sass/master.scss */
+/* line 312, ../sass/master.scss */
 .works-links li:hover a {
   color: #f38647;
   font-weight: bold;
 }
 
-/* line 310, ../sass/master.scss */
+/* line 317, ../sass/master.scss */
 #page-overview {
   width: 800px;
 }
@@ -434,37 +439,37 @@ section .title ul a {
 /***
  * Works page
  */
-/* line 317, ../sass/master.scss */
+/* line 324, ../sass/master.scss */
 #portfolio-contents {
   margin: 0 0 0 240px;
 }
 
-/* line 320, ../sass/master.scss */
+/* line 327, ../sass/master.scss */
 .works-page {
   display: none;
   padding: 0 0 40px 0;
 }
 
-/* line 324, ../sass/master.scss */
+/* line 331, ../sass/master.scss */
 .works-page h2 {
   color: #041B29;
   font: bold 24px "Libre Baskerville", "Times New Roman", sans-serif;
   padding: 20px 0;
 }
 
-/* line 329, ../sass/master.scss */
+/* line 336, ../sass/master.scss */
 .works-title {
   margin: 20px 0;
 }
 
-/* line 332, ../sass/master.scss */
+/* line 339, ../sass/master.scss */
 .works-title h1 {
   color: #041B29;
   font: bold 48px "Libre Baskerville", "Times New Roman", sans-serif;
   max-width: 1024px;
 }
 
-/* line 337, ../sass/master.scss */
+/* line 344, ../sass/master.scss */
 .works-title h2 {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -476,13 +481,13 @@ section .title ul a {
   width: 100%;
 }
 
-/* line 347, ../sass/master.scss */
+/* line 354, ../sass/master.scss */
 .works-title h2 .date {
   color: #f76e50;
   font-weight: bold;
 }
 
-/* line 351, ../sass/master.scss */
+/* line 358, ../sass/master.scss */
 .works-page p {
   color: #666;
   font: normal 18px "Droid Sans", Helvetica, sans-serif;
@@ -491,7 +496,7 @@ section .title ul a {
 }
 
 /* Images */
-/* line 359, ../sass/master.scss */
+/* line 366, ../sass/master.scss */
 .works-img-box, .works-img-box-half {
   border: 1px solid #CCC;
   width: 100%;
@@ -501,12 +506,12 @@ section .title ul a {
   position: relative;
 }
 
-/* line 367, ../sass/master.scss */
+/* line 374, ../sass/master.scss */
 .works-img-box.left img {
   position: static;
 }
 
-/* line 370, ../sass/master.scss */
+/* line 377, ../sass/master.scss */
 .works-img-box img {
   position: absolute;
   top: -100%;
@@ -517,12 +522,12 @@ section .title ul a {
   height: 100%;
 }
 
-/* line 379, ../sass/master.scss */
+/* line 386, ../sass/master.scss */
 .works-img-box-half.tall img {
   width: 100%;
 }
 
-/* line 382, ../sass/master.scss */
+/* line 389, ../sass/master.scss */
 .works-img-box-half {
   width: 375px;
   height: 300px;
@@ -531,24 +536,24 @@ section .title ul a {
 /***
  Page nav
  */
-/* line 391, ../sass/master.scss */
+/* line 398, ../sass/master.scss */
 .page-nav {
   width: 100%;
   height: 30px;
 }
 
-/* line 395, ../sass/master.scss */
+/* line 402, ../sass/master.scss */
 .page-nav a {
   color: #041B29;
   font: bold 14px "Droid Sans", Helvetica, sans-serif;
 }
 
-/* line 399, ../sass/master.scss */
+/* line 406, ../sass/master.scss */
 .page-nav a:hover {
   color: #f76e50;
 }
 
-/* line 402, ../sass/master.scss */
+/* line 409, ../sass/master.scss */
 a.page-back {
   background: #041B29;
   color: #FFF;
@@ -557,13 +562,13 @@ a.page-back {
   text-transform: uppercase;
 }
 
-/* line 409, ../sass/master.scss */
+/* line 416, ../sass/master.scss */
 a.page-back:hover {
   background: #f76e50;
   color: #FFF;
 }
 
-/* line 413, ../sass/master.scss */
+/* line 420, ../sass/master.scss */
 .page-nav a.open-new {
   padding: 8px 0;
 }
@@ -571,12 +576,12 @@ a.page-back:hover {
 /***
  * Works thumbnail title overlay
  */
-/* line 422, ../sass/master.scss */
+/* line 429, ../sass/master.scss */
 .thumb-title {
   display: none;
 }
 
-/* line 425, ../sass/master.scss */
+/* line 432, ../sass/master.scss */
 div.thumb-title {
   background: #f76e50;
   height: 100%;
@@ -587,7 +592,7 @@ div.thumb-title {
   z-index: 2;
 }
 
-/* line 434, ../sass/master.scss */
+/* line 441, ../sass/master.scss */
 h1.thumb-title {
   color: #FFF;
   font: bold 32px "Droid Sans", Helvetica, sans-serif;
@@ -604,12 +609,12 @@ h1.thumb-title {
 /*****************************
  * Portfolio icons
  *****************************/
-/* line 451, ../sass/master.scss */
+/* line 458, ../sass/master.scss */
 .portfolio-icons {
   padding: 3px;
 }
 
-/* line 454, ../sass/master.scss */
+/* line 461, ../sass/master.scss */
 .portfolio-icon {
   border: 1px solid transparent;
   color: #FFF;
@@ -622,44 +627,44 @@ h1.thumb-title {
   text-transform: uppercase;
 }
 
-/* line 467, ../sass/master.scss */
+/* line 474, ../sass/master.scss */
 .icon-web {
   background: #333;
 }
 
-/* line 470, ../sass/master.scss */
+/* line 477, ../sass/master.scss */
 .icon-web:before {
   content: "web";
 }
 
-/* line 473, ../sass/master.scss */
+/* line 480, ../sass/master.scss */
 .icon-design {
   border: 1px solid #9966CC;
   color: #9966CC;
 }
 
-/* line 477, ../sass/master.scss */
+/* line 484, ../sass/master.scss */
 .icon-design:before {
   content: "design";
 }
 
-/* line 480, ../sass/master.scss */
+/* line 487, ../sass/master.scss */
 .icon-android {
   background: #669966;
 }
 
-/* line 483, ../sass/master.scss */
+/* line 490, ../sass/master.scss */
 .icon-android:before {
   content: "android";
 }
 
-/* line 486, ../sass/master.scss */
+/* line 493, ../sass/master.scss */
 .icon-app {
   border: 1px solid #009999;
   color: #009999;
 }
 
-/* line 490, ../sass/master.scss */
+/* line 497, ../sass/master.scss */
 .icon-app:before {
   content: "app";
 }
@@ -667,33 +672,33 @@ h1.thumb-title {
 /***************************
  * Top right corner icons
  ***************************/
-/* line 497, ../sass/master.scss */
+/* line 504, ../sass/master.scss */
 .icon-open, .icon-github {
   float: right;
   opacity: 0.6;
   padding: 0 2px;
 }
 
-/* line 502, ../sass/master.scss */
+/* line 509, ../sass/master.scss */
 a:hover .icon-open, a:hover .icon-github {
   opacity: 1;
 }
 
-/* line 505, ../sass/master.scss */
+/* line 512, ../sass/master.scss */
 .icon-open {
   background: url("../images/icon/add65.png");
   width: 12px;
   height: 16px;
 }
 
-/* line 510, ../sass/master.scss */
+/* line 517, ../sass/master.scss */
 .icon-github {
   background: url("../images/icon/icon-github.png") no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 515, ../sass/master.scss */
+/* line 522, ../sass/master.scss */
 .open-new-label {
   color: #666;
   display: none;
@@ -704,46 +709,46 @@ a:hover .icon-open, a:hover .icon-github {
 /*****************************
  * Footer
  *****************************/
-/* line 526, ../sass/master.scss */
+/* line 533, ../sass/master.scss */
 footer {
   background: #041B29;
   color: #FFF;
   width: 100%;
 }
 
-/* line 531, ../sass/master.scss */
+/* line 538, ../sass/master.scss */
 footer section {
   float: left;
   width: 300px;
   padding: 20px;
 }
 
-/* line 536, ../sass/master.scss */
+/* line 543, ../sass/master.scss */
 footer h1 {
   font: bold 18px "Droid Sans", Helvetica, sans-serif;
   text-transform: uppercase;
   margin: 10px 0 20px 0;
 }
 
-/* line 541, ../sass/master.scss */
+/* line 548, ../sass/master.scss */
 footer p, footer a {
   font: normal 14px "Droid Sans", Helvetica, sans-serif;
 }
 
-/* line 544, ../sass/master.scss */
+/* line 551, ../sass/master.scss */
 footer a {
   color: #f38647;
   font-weight: bold;
 }
 
-/* line 548, ../sass/master.scss */
+/* line 555, ../sass/master.scss */
 .social-link img {
   width: 36px;
   height: 36px;
   padding: 0 10px 0 0;
 }
 
-/* line 553, ../sass/master.scss */
+/* line 560, ../sass/master.scss */
 .attr, .attr a {
   font: normal 12px "Droid Sans", Helvetica, sans-serif;
 }
@@ -751,17 +756,17 @@ footer a {
 /*****************************
  * Utility
  *****************************/
-/* line 561, ../sass/master.scss */
+/* line 568, ../sass/master.scss */
 .hidetext {
   opacity: 0;
 }
 
-/* line 565, ../sass/master.scss */
+/* line 572, ../sass/master.scss */
 .fl {
   float: left;
 }
 
-/* line 568, ../sass/master.scss */
+/* line 575, ../sass/master.scss */
 .fr {
   float: right;
 }
@@ -775,7 +780,7 @@ footer a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 581, ../sass/master.scss */
+/* line 588, ../sass/master.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -784,7 +789,7 @@ footer a {
   /* 2 */
 }
 
-/* line 587, ../sass/master.scss */
+/* line 594, ../sass/master.scss */
 .cf:after {
   clear: both;
 }
@@ -793,7 +798,7 @@ footer a {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 595, ../sass/master.scss */
+/* line 602, ../sass/master.scss */
 .cf {
   *zoom: 1;
 }
