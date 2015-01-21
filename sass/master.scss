@@ -200,6 +200,10 @@ nav li {
     width: $container-size;
 }
 
+ .contents {
+    margin: 0 0 0 240px;
+ }
+
 
 
 /****************************
@@ -321,9 +325,6 @@ section .title ul a {
 /***
  * Works page
  */
- #portfolio-contents {
-    margin: 0 0 0 240px;
- }
  .works-page {
     display: none;
     padding: 0 0 40px 0;    
@@ -525,6 +526,27 @@ h1.thumb-title {
     font: normal 12px $font-stack;
     line-height: 22px;
 }
+
+/***************************
+ * Ongoing
+ ***************************/
+
+ .ongoing-container img {
+    border: 1px solid #CCC;
+ }
+ .ongoing-container {
+    padding: 10px;    
+    margin: 5px;
+    width: 300px;
+ }
+ .ongoing-container h1 {
+    font: bold 16px $font-stack;
+    padding: 10px 5px;
+ }
+ .ongoing-container p {
+    font: normal 14px $font-stack;
+    padding: 5px;
+ }
 
 /*****************************
  * Footer
