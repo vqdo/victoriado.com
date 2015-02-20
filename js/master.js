@@ -109,7 +109,7 @@ var home = (function() {
 				var $link = pair.link,
 					$thumb = pair.thumbnail;
 
-				if($thumb) {
+				if($thumb && $link) {
 					$link.mouseenter(function() {
 						$thumb.find('a').mouseover();
 					}).mouseleave(function() {

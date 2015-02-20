@@ -4,7 +4,7 @@
 <head>
 	<title>Victoria Do</title>
 	<meta charset="utf-8"> 	
-	<meta name="Description" CONTENT="Personal website of front-end developer, web designer and UCSD student Victoria Do.">
+	<meta name="Description" CONTENT="Personal website of front-end developer, web designer and UCSD student Victoria Q. Do.">
 	<link rel="stylesheet" href="css/master.css">
 	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Droid+Sans:400' rel='stylesheet' type='text/css'>
 </head>
@@ -12,18 +12,11 @@
 	<header class="cf">
 		<nav class="cf">
 			<div class="container">
-				<h1 id="identity" class="fl">Victoria Do</h1>
+				<h1 id="identity" class="fl">Victoria Q. Do</h1>
  				<ul class="fl">
  					<li><a href="#portfolio-contents">Works</a></li>
  					<li><a href="http://blog.victoriado.com">Blog</a></li>
  					<li><a href="/resume.pdf">Resume</a></li>
-<!-- 					<li><a href="/">
-						Works
-						</a>
-					</li>		
-					<li><a href="/">Contact</a></li>
-					<li><a href="/">About</a></li> -->
-
 				</ul> 
 				<a class="mailto fr" href="mailto:victoriado@outlook.com">
 					<span class="hidetext">Mail</span>
@@ -76,6 +69,7 @@
 				<h1>Works</h1>
 				<h2>An overview</h2>
 				<ul class="works-links">
+					<li id="link-leicester" class="type-web"><a href="#page-uis">Undegraduate Investment Society</a></li>
 					<li id="link-leicester" class="type-web"><a href="#page-leicester">University of Leicester</a></li>
 					<li id="link-pugs" class="type-web"><a href="#page-pugs">Pug Adoption</a></li>
 					<li id="link-ryb" class="type-web"><a href="#page-ryb">Portfolio - RYB</a></li>	
@@ -84,7 +78,32 @@
 				</ul>
 			</div>
 			<div class="contents" id="portfolio-contents">
-			    <div class="portfolio-gallery cf works-page" id="page-overview">         
+			    <div class="portfolio-gallery cf works-page" id="page-overview">     	
+	                <div id="thumb-uis" class="portfolio-thumb">              
+	                    <div class="portfolio-icons cf">
+	                        <div class="portfolio-icon icon-web"></div>
+	                        <div class="portfolio-icon icon-design"></div>
+	                        
+	                        <a target="_blank" href="https://github.com/vqdo/uis-ucsd">
+	                            <div class="portfolio-icon icon-github"></div>
+	                        </a>
+
+	                        <a class="open-new" target="_blank" href="http://uis.victoriado.com/app">     
+	                            <div class="portfolio-icon icon-open"></div>
+	                            <span class="fr open-new-label">View Live</span>        
+	                        </a>                            
+	                    </div>                              
+	                    <a href="/" class="see-more-button">
+	                        <img src="images/thumb/uis-mission.png" alt="" />   
+	                        <div class="thumb-title"></div>
+	                        <h1 class="thumb-title">UIS Organization Website</h1>                                                        
+	                    </a>
+	                    <div class="more-info">             
+	                        <p>A website serving members of the Undergraduate Investment Society at UCSD, which holds the annual Financial Horizons Conference.</p> 
+
+	                        <a class="goto-details" href="#page-uis">Go in-depth</a>                   
+	                    </div>
+	                </div>			    	        
 	                <div id="thumb-leicester" class="portfolio-thumb">              
 	                    <div class="portfolio-icons cf">
 	                        <div class="portfolio-icon icon-web"></div>
@@ -191,6 +210,23 @@
 						</div>					
 					</div>				
 	            </div>   
+
+	            <!-- Undergraduate Investment Society -->
+				<section id="page-uis" class="works-page">
+					<div class="page-nav"><a class="page-back" href="#page-overview"> Back</a>
+					<a target="_blank" class="open-new fr" href="http://uis.victoriado.com/app">
+						View Live
+					</a>
+
+					</div>
+					<div class="works-title">
+						<h1>Undergraduate Investment Society</h1> 
+						<h2>Organization Website<span class="fr date">February 2015</span></h2>
+					</div>
+
+					<p>The Undergraduate Investment Society is a finance-oriented organization on campus that holds an annual conference that attracts hundreds of students from Southern California universities. Linked is a prototype of the finished project - stay tuned!</p>
+
+				</section>		
 
 	            <!-- UNIVERSITY OF LEICESTER -->
 
@@ -336,8 +372,12 @@
 				<h1>Ongoing</h1>
 				<h2>In Progress</h2>
 			</div>
-			<div class="contents">
-
+			<div class="contents cf">
+				<div class="fl ongoing-container">
+					<img src="./images/thumb/sungod-comingsoon.png">
+					<h1>Sun God Festival 2015</h1>
+					<p>The biggest annual festival at UCSD!</p>
+				</div>
 				<div class="fl ongoing-container"><img src="./images/thumb/current-capsule.png">
 					<h1>Photo Capsule</h1>
 					<p>A location-based Android application for sharing and exploring photos.</p>
@@ -345,7 +385,8 @@
 				<div class="fl ongoing-container"><img src="./images/thumb/current-rwd.png">
 					<h1>Read Write Discover Redesign</h1>
 					<p>Website redesign for a Bay Area non-profit reading and writing program, Read Write Discover.</p>
-				</div>				
+				</div>		
+				</div>		
 			</div>	
 		</div>				
 	</div>
