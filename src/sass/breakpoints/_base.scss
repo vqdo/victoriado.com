@@ -1,0 +1,33 @@
+//*******************************
+//* General
+//*******************************/
+
+#content {
+    margin-top: $page-offset;
+}
+
+//*******************************
+//* Navigation
+//*******************************/
+
+.navbar {
+    background: $orange;
+    border-bottom: 1px solid $navy;
+    opacity: 1;
+
+    a {
+        color: $navy;
+    }
+}
+
+//*******************************
+//* Homepage
+//*******************************/
+
+#home-panel {
+    background: $navy;
+
+    .container {
+        background: $orange;
+    }
+}

@@ -1,0 +1,16 @@
+@import "partials/normalize";
+@import "partials/variables";
+
+@import "breakpoints/base";
+
+@media only screen and (min-width: 768px) {
+    @import "breakpoints/768px";
+}
+
+@media only screen and (min-width: 992px) {
+    @import "breakpoints/992px";
+}
+
+@media only screen and (min-width: 1200px) {
+    @import "breakpoints/1200px";
+}

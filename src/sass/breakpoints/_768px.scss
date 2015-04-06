@@ -1,0 +1,23 @@
+//*******************************
+//* Homepage
+//*******************************/
+
+#home-panel {
+    text-align: center;    
+    
+    h1 {
+        color: $white;
+        font: displayFont(5em);
+    }
+    h2 {
+        border-bottom: 1px solid $black;
+        color: $orange;
+        font: paragraphFont();
+        text-transform: uppercase;
+    }
+
+    #featured-skills {
+        background: $navy;
+
+    }
+}

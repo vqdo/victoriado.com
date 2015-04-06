@@ -1,0 +1,143 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+a {
+	border-bottom: 1px dotted #666;
+	font: 12px "Open Sans", sans-serif;
+	color: #FFF;
+	padding: 2px 0;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+a:hover {
+	color: #FFDD11;
+}
+
+body {
+	background: url('images/footer_lodyas.png');
+}
+
+h1, h2 {
+	font: bold 32px "Open Sans", Helvetica, sans-serif;
+	margin: 0;
+}
+h1 {
+	color: #FFF;
+	text-transform: lowercase;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	padding: 20px 0;
+	letter-spacing: -2px;
+}
+h2 {
+	color: #FFF;
+	font: normal 14px "Open Sans", Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+.headline-prepend {
+	color: #ffdd11;
+	text-transform: uppercase;
+	font: normal 12px "Open Sans", Helvetica, sans-serif;
+	margin: 0 0 -10px 0;
+	letter-spacing: 2px;
+}
+
+#container {
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: center;
+	min-height: 100%;
+	width: 940px;
+}
+.scoreboard {
+	display: none;
+}
+.card-creator {
+	display: none;
+}
+
+.card {
+	background: #EEE;
+	border: 1px #000 solid;
+	box-shadow: 0 0 2px #000;
+	float: left;
+	font: normal 24px georgia;
+	height: 130px;
+	margin: 10px;
+	text-align: center;
+	position: relative;
+	width: 212px;	
+}
+.card.bad {
+	border: 1px solid red;
+}
+.card:hover, button:hover {
+	cursor: pointer;
+}
+.card.facedown .overlay {
+	background: url('images/small_steps.png');
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.card.facedown .overlay:hover {
+	opacity: 0.6;
+}
+
+.card.facedown {
+	background: #f2aa21;		
+}
+
+.card.facedown span {
+	display: none;
+}
+.card.bad span {
+	color: red;
+}
+
+.card span {
+	color: #666;
+	font: bold 24px "Open Sans", Helvetica, sans-serif;
+	position: absolute;
+	z-index: 10;
+}
+.show-play {
+	display: inline-block;
+	margin: 0 0 20px 0;
+}
+.load-default {
+	background: #ffdd11;
+	border: 1px solid #fff;
+	display: block;
+	font: bold 32px "Open Sans", Helvetica, sans-serif;
+	margin: 10px auto;
+	width: 400px;
+	height: 100px;
+	color: #000;
+	text-transform: uppercase;
+}
+.add-card, input[type='submit'] {
+	background: #FFF;
+	border: 1px solid #000;
+	display: block;
+	font: bold 16px "Open Sans", Helvetica, sans-serif;
+	margin: 10px auto;
+}
+input[type="text"] {
+	font: normal 16px "Open Sans", Helvetica, sans-serif;
+	padding: 5px;
+	margin: 5px 0;
+}
+.add-card {
+
+}
+
+.isactive {
+}
+
+#board {
+	display: none;
+}

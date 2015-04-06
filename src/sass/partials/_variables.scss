@@ -1,0 +1,24 @@
+
+
+// Colors
+$navy:      #1C313E;
+$orange:    #F76E50;
+$white:     #FFFFFF;
+$black:     #000000;
+
+// General Page
+$page-offset: 50px;
+
+
+// Functions
+$headline-weight:   normal;
+$paragraph-weight:  normal;
+$fonts-headline:    "franklin-gothic-urw-cond", Helvetica, sans-serif;
+$fonts-paragraph:   Helvetica, Arial, sans-serif;
+
+@function displayFont($size) {
+    @return $headline-weight $size $fonts-headline;
+}
+@function paragraphFont($size : 1em) {
+    @return $paragraph-weight $size $fonts-paragraph;
+}
