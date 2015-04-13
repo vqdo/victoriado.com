@@ -1,9 +1,17 @@
 //*******************************
 //* General
 //*******************************/
+body {
+    background: $red;
+}
 
-#content {
+#wrapper {
     margin-top: $page-offset;
+}
+#content {
+    background: $white;
+    border-left: 1em solid $cream;
+    border-right: 1em solid $cream;
 }
 
 //*******************************
@@ -11,12 +19,22 @@
 //*******************************/
 
 .navbar {
-    background: $orange;
-    border-bottom: 1px solid $navy;
+    background: $dark-red;
     opacity: 1;
+    padding: 10px 0;
 
-    a {
-        color: $navy;
+    .navbar-brand {
+        height: auto;
+    }
+    a, a.dropdown-toggle, li > a {
+        font: bold 2em $fonts-headline;
+        color: $cream;
+        text-transform: uppercase;
+
+        &:hover, &:active, &:focus {
+            background: $red;
+            color: $lime;
+        }
     }
 }
 
@@ -25,9 +43,56 @@
 //*******************************/
 
 #home-panel {
-    background: $navy;
+    background: $dark-red;
 
     .container {
-        background: $orange;
+        background: $cream;  
+    }
+}
+
+.home-section {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 60px;
+    margin: 40px 0;
+}
+.section-title {
+    margin: 1em 0 5em 0;
+}
+.section-title h1 {
+    border: 2px solid $red; 
+    font: paragraphFont(3em);
+    color: $red;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+//*******************************
+//* Portfolio Overview
+//*******************************/
+
+.project-thumb {
+    text-align: center;
+    margin: 0 0 40px 0;
+
+    h1 {
+        display: block;
+        background: $red;
+        color: $cream;
+        font: displayFont(16px);
+        margin: 0;
+        padding: 0.25em 0;
+        text-transform: uppercase;
+    }
+    .thumb {
+        border: 1px solid $lime;
+            border-top: 0;
+   
+        text-align: center;        
+        img {
+            max-width: 100%;
+            opacity: 0.8;
+        }
     }
 }

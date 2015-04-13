@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Undergraduate Investment Society",
+        "type": "website",
+        "thumb": "assets/images/thumbs/uis.png",
+        "live": "http://uisucsd.com",
+        "page": "portfolio/uis.html",
+        "date": "March 2015"
+    },
+    {
+        "title": "Sun God Festival 2015",
+        "type": "website",
+        "thumb": "assets/images/thumbs/sgf.png",
+        "live": "http://sgf.ucsd.edu",
+        "date": "May 2015"      
+    },
+    {
+        "title": "Photo Capsule",
+        "type": "android",
+        "thumb": "assets/images/thumbs/sgf.png",
+        "live": "http://sgf.ucsd.edu",
+        "date": "March 2015"      
+    }    
+] 

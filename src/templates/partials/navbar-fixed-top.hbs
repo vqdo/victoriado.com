@@ -14,12 +14,13 @@ component: navbar
       <a class="navbar-brand" href="{{relative page.dest "dist/index.html"}}">{{ site.title }}</a>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <!-- you can exclude pages using \{{#isnt}} helper: \{{#isnt data.title 'Blog'}} -->
+      <ul class="nav navbar-nav">    
         {{#each pages}}
-        <li{{#if this.isCurrentPage}} class="active"{{/if}}>
-          <a href="{{relative dest this.dest}}">{{ data.title }}</a>
-        </li>
+          {{#unless data.exclude }}  
+            <li{{#if this.isCurrentPage}} class="active"{{/if}}>
+              <a href="{{relative dest this.dest}}">{{ data.title }}</a>
+            </li>
+          {{/unless}}
         {{/each}}
       </ul>
       <ul class="nav navbar-nav navbar-right">

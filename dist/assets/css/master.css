@@ -424,26 +424,103 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background: #d14334;
+}
+
+#wrapper {
+  margin-top: 85px;
+}
+
 #content {
-  margin-top: 50px;
+  background: white;
+  border-left: 1em solid #ffeaad;
+  border-right: 1em solid #ffeaad;
 }
 
 .navbar {
-  background: #f76e50;
-  border-bottom: 1px solid #1c313e;
+  background: #ad2719;
   opacity: 1;
+  padding: 10px 0;
 }
 
-.navbar a {
-  color: #1c313e;
+.navbar .navbar-brand {
+  height: auto;
+}
+
+.navbar a,
+.navbar a.dropdown-toggle,
+.navbar li > a {
+  font: bold 2em "franklin-gothic-urw-cond", Helvetica, sans-serif;
+  color: #ffeaad;
+  text-transform: uppercase;
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus,
+.navbar a.dropdown-toggle:hover,
+.navbar a.dropdown-toggle:active,
+.navbar a.dropdown-toggle:focus,
+.navbar li > a:hover,
+.navbar li > a:active,
+.navbar li > a:focus {
+  background: #d14334;
+  color: #b3e099;
 }
 
 #home-panel {
-  background: #1c313e;
+  background: #ad2719;
 }
 
 #home-panel .container {
-  background: #f76e50;
+  background: #ffeaad;
+}
+
+.home-section {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 60px;
+  margin: 40px 0;
+}
+
+.section-title {
+  margin: 1em 0 5em 0;
+}
+
+.section-title h1 {
+  border: 2px solid #d14334;
+  font: normal 3em "franklin-gothic-urw-cond", Helvetica, Arial, sans-serif;
+  color: #d14334;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.project-thumb {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.project-thumb h1 {
+  display: block;
+  background: #d14334;
+  color: #ffeaad;
+  font: bold 16px "franklin-gothic-urw-cond", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0.25em 0;
+  text-transform: uppercase;
+}
+
+.project-thumb .thumb {
+  border: 1px solid #b3e099;
+  border-top: 0;
+  text-align: center;
+}
+
+.project-thumb .thumb img {
+  max-width: 100%;
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 768px) {
@@ -452,19 +529,54 @@ table {
   }
 
   #home-panel h1 {
-    color: white;
-    font: normal 5em "franklin-gothic-urw-cond", Helvetica, sans-serif;
+    color: #d14334;
+    font: bold 5em "franklin-gothic-urw-cond", Helvetica, sans-serif;
   }
 
   #home-panel h2 {
-    border-bottom: 1px solid black;
-    color: #f76e50;
-    font: normal 1em Helvetica, Arial, sans-serif;
+    color: #028f76;
+    font: bold 16px "franklin-gothic-urw-cond", Helvetica, sans-serif;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
   }
 
   #home-panel #featured-skills {
-    background: #1c313e;
+    background: #b3e099;
+  }
+
+  #home-panel #featured-skills .skill-box {
+    padding: 0 20%;
+  }
+
+  #home-panel #featured-skills .skill-box img {
+    max-width: 100%;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .section-title h1 {
+    display: inline;
+    padding: 0.2em 1em;
+  }
+
+  .project-thumb {
+    /* Hover styles */
+  }
+
+  .project-thumb .thumb {
+    -webkit-box-shadow: 0.4em 0.4em 0 #b3e099;
+    box-shadow: 0.4em 0.4em 0 #b3e099;
+  }
+
+  .project-thumb:hover h1 {
+    background: #ad2719;
+    color: #b3e099;
+  }
+
+  .project-thumb:hover .thumb img {
+    opacity: 1;
   }
 }
 

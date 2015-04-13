@@ -2,19 +2,26 @@
 
 // Colors
 $navy:      #1C313E;
-$orange:    #F76E50;
+$orange:    #E9685A;
+$cream:     #FFEAAD;
+$red:       #D14334;
+$dark-red:  #AD2719;
 $white:     #FFFFFF;
-$black:     #000000;
+$black:     #1C2130;
+$gray:      #666;
+$light-gray:      #CCC;
+$teal:      #028F76;
+$lime:      #B3E099;
 
 // General Page
-$page-offset: 50px;
+$page-offset: 85px;
 
 
 // Functions
-$headline-weight:   normal;
+$headline-weight:   bold;
 $paragraph-weight:  normal;
 $fonts-headline:    "franklin-gothic-urw-cond", Helvetica, sans-serif;
-$fonts-paragraph:   Helvetica, Arial, sans-serif;
+$fonts-paragraph:   "franklin-gothic-urw-cond", Helvetica, Arial, sans-serif;
 
 @function displayFont($size) {
     @return $headline-weight $size $fonts-headline;

@@ -5,7 +5,7 @@ lead: Welcome to my blog!
 intro_text: I am a front-end developer and designer
 skills_heading: Here's what I can do
 skills: 
-    - {skill: test, img: img2}
+    - {skill: UX, img: assets/images/icon/icon-ux.png}
     - skill: test
     - skill: test
 
@@ -17,14 +17,16 @@ skills:
             <h2 class="col-xs-12">Here's what I can do</h2>
           {{#each skills}}
             <div class="skill-box col-xs-4">
+                <img src="{{img}}" alt="{{skill}}">
                 {{ skill }}
+            
             </div>
           {{/each}}
         </div>
     </div>
 </div>
-<div class="jumbotron">
-  <h1>{{ heading }}</h1>
-  <p>This is a Assemble Generator template using <a href="http://getbootstrap.com">Bootstrap</a>. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-  <p><a href="blog.html" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+<div id="content" class="container">
+    {{> all-projects }}
+
+    {{> ongoing-projects }}
 </div>

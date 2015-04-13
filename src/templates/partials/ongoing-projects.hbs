@@ -1,0 +1,13 @@
+<section class="home-section row">
+    <div class="col-xs-12 section-title">
+        <h1>Ongoing Projects</h1>
+    </div>
+    {{#each portfolio}}
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <div class="thumb">
+                <h1>{{ title }}</h1>        
+                <img src="{{thumb}}" alt="{{title}}">
+            </div>
+        </div>
+    {{/each}}
+</section>

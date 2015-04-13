@@ -51,7 +51,11 @@ module.exports = function(grunt) {
 			scripts: {
 			    files: ['./src/js/master.js'],
 			    tasks: ['copy']
-			 }     
+			 },
+      theme: {
+          files: ['<%= config.src %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'],
+          tasks: ['copy']
+       }               
     },
 
     connect: {
@@ -82,7 +86,8 @@ module.exports = function(grunt) {
           plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap'],
         },
         files: {
-          '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
+          '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
+          '<%= config.dist %>/portfolio/': ['<%= config.src %>/templates/portfolio/*.hbs']
         }
       }
     },
@@ -96,9 +101,9 @@ module.exports = function(grunt) {
       },
       theme: {
         expand: true,
-        cwd: 'src/assets/',
+        cwd: 'src/assets/images',
         src: '**',
-        dest: '<%= config.dist %>/assets/css/'
+        dest: '<%= config.dist %>/assets/images/'
       },
       scripts: {
         expand: true,

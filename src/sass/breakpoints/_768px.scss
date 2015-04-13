@@ -6,18 +6,57 @@
     text-align: center;    
     
     h1 {
-        color: $white;
+        color: $red;
         font: displayFont(5em);
     }
     h2 {
-        border-bottom: 1px solid $black;
-        color: $orange;
-        font: paragraphFont();
+        color: $teal;
+        font: displayFont(16px);
+        letter-spacing: 0.1em;
         text-transform: uppercase;
     }
 
     #featured-skills {
-        background: $navy;
+        background: $lime;
 
+        .skill-box {
+            padding: 0 20%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+.section-title {
+    text-align: center;
+}
+.section-title h1 {
+    display: inline;
+    padding: 0.2em 1em;
+}
+
+//*******************************
+//* Portfolio Overview
+//*******************************/
+
+.project-thumb {
+    .thumb {
+        box-shadow: 0.4em 0.4em 0 $lime;      
+    }
+
+    /* Hover styles */
+    &:hover {
+        h1 {
+            background: $dark-red;
+            color: $lime;
+        }
+
+        .thumb {
+            img {
+                opacity: 1;
+            }
+        }
     }
 }

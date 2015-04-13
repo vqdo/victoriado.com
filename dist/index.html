@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Victoriado</title>
+    <title>Home | Victoria Do</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -13,8 +13,6 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/master.css" rel="stylesheet">
-
-    <script src="assets/js/master.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,19 +34,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Victoriado</a>
+      <a class="navbar-brand" href="index.html">Victoria Do</a>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <!-- you can exclude pages using {{#isnt}} helper: {{#isnt data.title 'Blog'}} -->
+      <ul class="nav navbar-nav">    
         
-        <li>
-          <a href="blog.html">Blog</a>
-        </li>
+            
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+          
         
-        <li class="active">
-          <a href="index.html">Home</a>
-        </li>
+            
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+          
+        
+          
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -70,7 +73,7 @@
 </div>
 
 
-    <div role="main" id="content">
+    <div role="main" id="wrapper">
 
       
 <div id="home-panel">
@@ -80,26 +83,89 @@
             <h2 class="col-xs-12">Here's what I can do</h2>
           
             <div class="skill-box col-xs-4">
-                test
+                <img src="assets/images/icon/icon-ux.png" alt="UX">
+                UX
+            
             </div>
           
             <div class="skill-box col-xs-4">
+                <img src="" alt="test">
                 test
+            
             </div>
           
             <div class="skill-box col-xs-4">
+                <img src="" alt="test">
                 test
+            
             </div>
           
         </div>
     </div>
 </div>
-<div class="jumbotron">
-  <h1>Yo, Assemble!</h1>
-  <p>This is a Assemble Generator template using <a href="http://getbootstrap.com">Bootstrap</a>. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-  <p><a href="blog.html" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-</div>
+<div id="content" class="container">
+    <section class="home-section row">
+    <div class="col-xs-12 section-title">
+        <h1>All Projects</h1>
+    </div>
+    
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <a href="portfolio/uis.html">
+                <div class="thumb">
+                    <h1>Undergraduate Investment Society</h1>        
+                    <img src="assets/images/thumbs/uis.png" alt="Undergraduate Investment Society">
+                </div>
+            </a>
+        </div>
+    
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <a href="">
+                <div class="thumb">
+                    <h1>Sun God Festival 2015</h1>        
+                    <img src="assets/images/thumbs/sgf.png" alt="Sun God Festival 2015">
+                </div>
+            </a>
+        </div>
+    
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <a href="">
+                <div class="thumb">
+                    <h1>Photo Capsule</h1>        
+                    <img src="assets/images/thumbs/sgf.png" alt="Photo Capsule">
+                </div>
+            </a>
+        </div>
+    
+</section>
 
+    <section class="home-section row">
+    <div class="col-xs-12 section-title">
+        <h1>Ongoing Projects</h1>
+    </div>
+    
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <div class="thumb">
+                <h1>Undergraduate Investment Society</h1>        
+                <img src="assets/images/thumbs/uis.png" alt="Undergraduate Investment Society">
+            </div>
+        </div>
+    
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <div class="thumb">
+                <h1>Sun God Festival 2015</h1>        
+                <img src="assets/images/thumbs/sgf.png" alt="Sun God Festival 2015">
+            </div>
+        </div>
+    
+        <div class="project-thumb col-xs-12 col-sm-6 col-md-4">
+            <div class="thumb">
+                <h1>Photo Capsule</h1>        
+                <img src="assets/images/thumbs/sgf.png" alt="Photo Capsule">
+            </div>
+        </div>
+    
+</section>
+</div>
 
     </div>
 
@@ -107,5 +173,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/master.js"></script>    
   </body>
 </html>
